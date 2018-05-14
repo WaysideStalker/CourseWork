@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ZhevakinArtemenkoRGR
 {
-    public static  class FormsToUSe
+    public static class FormsToUSe
     {
         public static List<List<string>> ListsList = new List<List<string>>();
         public static int _indexOfCurrent;
@@ -21,9 +21,9 @@ namespace ZhevakinArtemenkoRGR
         }
         static FormsToUSe()
         {
-            ListsList.Add(new List<string>(){ ReadFromSourceFile("FirstTheme.txt"),ReadFromSourceFile("FirstTest.txt") ,ReadFromSourceFile("FirstAnswers.txt") });
-            ListsList.Add(new List<string>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt"), ReadFromSourceFile("FirstAnswers.txt") });
-            ListsList.Add(new List<string>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt"), ReadFromSourceFile("FirstAnswers.txt") });
-        }             
+            ListsList.Add(new List<string>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt"), ReadFromSourceFile("FirstTestAnswers.txt"), ReadFromSourceFile("CorrectAnswers.txt") });
+            ListsList.Add(new List<string>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt"), ReadFromSourceFile("FirstTestAnswers.txt"), ReadFromSourceFile("CorrectAnswers.txt") });
+            ListsList.Add(new List<string>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt"), ReadFromSourceFile("FirstTestAnswers.txt"), ReadFromSourceFile("CorrectAnswers.txt") });
+        }
     }
 }

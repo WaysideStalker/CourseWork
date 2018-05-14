@@ -12,34 +12,38 @@ namespace ZhevakinArtemenkoRGR
 {
     public partial class Form1 : Form
     {
+        private readonly List<CheckBox>varianToUSeCheckBoxs;
+        private  int _indexOfCurrentTest;
+        private readonly string[]_answersForTest;
+        private readonly string[]_correctAnswersForTest;
 
-        public Form1()
+        public Form1(string text, string test, string[] answers,string [] correctAnswers)
         {
             InitializeComponent();
-
-
-        }
-
-        public Form1(string text, string test, string[] answers)
-        {
-            InitializeComponent();
+            _indexOfCurrentTest = 0;
+            _answersForTest = answers;
+            _correctAnswersForTest = correctAnswers;
             richTextBox1.Text = text;
             richTextBox2.Text = test;
+
+            varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
+            for (int i = 0; i < varianToUSeCheckBoxs.Count; i++)
+                varianToUSeCheckBoxs[i].Text = answers[i];
+
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox2.BorderStyle = BorderStyle.None;
-            panel2.Visible = false;
-
-        }
-
-        public void metroToggle1_CheckedChanged(object sender, EventArgs e)
-        {
-
+            panel2.Visible = false;                       
         }
 
         public void bunifuThinButton26_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
             panel1.Visible = false;
+        }
+        private void FromTestToThemeButton_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = true;
         }
         public void MouseEnterInPanelWithChechBox(Panel usingPanel, CheckBox usingCheckBox)
         {
@@ -96,12 +100,6 @@ namespace ZhevakinArtemenkoRGR
 
         public void bunifuThinButton23_Click(object sender, EventArgs e) => OpenForm(FormsToUSe._indexOfCurrent + 1);
 
-
-        public void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void HideButtonToPrevious() => MoveToPreviousThemeForm.Visible = false;
         public void HideButtonToNext() => NextThemeFormFromTest.Visible = false;
         private void metroButton1_Click(object sender, EventArgs e) => OpenForm(0);
@@ -109,6 +107,8 @@ namespace ZhevakinArtemenkoRGR
         private void metroButton3_Click(object sender, EventArgs e) => OpenForm(2);
         private void metroButton4_Click(object sender, EventArgs e) => OpenForm(3);
         private void metroButton5_Click(object sender, EventArgs e) => OpenForm(4);
+        private void MoveToPreviousThemeForm_Click(object sender, EventArgs e) => OpenForm(FormsToUSe._indexOfCurrent - 1);
+        private void NextThemeFormFromTheme_Click(object sender, EventArgs e) => OpenForm(FormsToUSe._indexOfCurrent + 1);
 
         public void OpenForm(int indexFormToOpen)
         {
@@ -129,7 +129,8 @@ namespace ZhevakinArtemenkoRGR
         }
         public void CreateNewForm(int indexFormToCreate)
         {
-            StartPage.existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0], FormsToUSe.ListsList[indexFormToCreate][1], FormsToUSe.ListsList[indexFormToCreate][2].Split('\n')));
+            StartPage.existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
+                FormsToUSe.ListsList[indexFormToCreate][1], FormsToUSe.ListsList[indexFormToCreate][2].Split('\n'),FormsToUSe.ListsList[indexFormToCreate][3].Split('\n')));
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 StartPage.existForms[indexFormToCreate].HideButtonToPrevious();
@@ -138,16 +139,28 @@ namespace ZhevakinArtemenkoRGR
 
             StartPage.existForms[indexFormToCreate].Show();
         }
-
-        private void MoveToPreviousThemeForm_Click(object sender, EventArgs e) => OpenForm(FormsToUSe._indexOfCurrent - 1);
-
-
-        private void FromTestToThemeButton_Click(object sender, EventArgs e)
+        private void NextTest()
         {
-            panel2.Visible = false;
-            panel1.Visible = true;
+            _indexOfCurrentTest++;
+            for (int i = 0; i < varianToUSeCheckBoxs.Count; i++)
+                varianToUSeCheckBoxs[i].Text = _answersForTest[i + _indexOfCurrentTest * 4];
         }
-
-        private void NextThemeFormFromTheme_Click(object sender, EventArgs e) => OpenForm(FormsToUSe._indexOfCurrent + 1);
+        private void AnsverOnTest_ThinButton_Click(object sender, EventArgs e)
+        {
+            foreach (var i in varianToUSeCheckBoxs)
+            {
+                if (i.Checked)
+                {
+                    if (i.Text == _correctAnswersForTest[_indexOfCurrentTest])
+                    {
+                        ErorInputLabel.Visible = false;
+                        i.Checked = false;
+                        NextTest();
+                        break;
+                    }
+                    ErorInputLabel.Visible = true;
+                }
+            }            
+        }
     }
 }

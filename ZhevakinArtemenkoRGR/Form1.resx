@@ -486,7 +486,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="NextThemeFormFromTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 512</value>
+    <value>763, 519</value>
   </data>
   <data name="NextThemeFormFromTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -507,9 +507,9 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;NextThemeFormFromTest.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="bunifuThinButton24.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AnsverOnTest_ThinButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKVSURBVHhe7ZxLaxNRGIb9Ra5cuHGhgkgFBRUFSxWLN9qK
@@ -526,31 +526,64 @@
         5cGlcc3SFaOW0kUVtTSnopbmVNTSnIpaGrOEX5NFNtEqrIDmAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuThinButton24.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="AnsverOnTest_ThinButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
   </data>
-  <data name="bunifuThinButton24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 509</value>
+  <data name="AnsverOnTest_ThinButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 519</value>
   </data>
-  <data name="bunifuThinButton24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="AnsverOnTest_ThinButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="bunifuThinButton24.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AnsverOnTest_ThinButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 41</value>
   </data>
-  <data name="bunifuThinButton24.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="AnsverOnTest_ThinButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;bunifuThinButton24.Name" xml:space="preserve">
-    <value>bunifuThinButton24</value>
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Name" xml:space="preserve">
+    <value>AnsverOnTest_ThinButton</value>
   </data>
-  <data name="&gt;&gt;bunifuThinButton24.Type" xml:space="preserve">
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;bunifuThinButton24.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;bunifuThinButton24.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ErorInputLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ErorInputLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="ErorInputLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 295</value>
+  </data>
+  <data name="ErorInputLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 18</value>
+  </data>
+  <data name="ErorInputLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ErorInputLabel.Text" xml:space="preserve">
+    <value>*Ответ не верный попробуйте еще раз</value>
+  </data>
+  <data name="ErorInputLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ErorInputLabel.Name" xml:space="preserve">
+    <value>ErorInputLabel</value>
+  </data>
+  <data name="&gt;&gt;ErorInputLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErorInputLabel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;ErorInputLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="FromTestToThemeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -574,7 +607,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="FromTestToThemeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 509</value>
+    <value>0, 519</value>
   </data>
   <data name="FromTestToThemeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -595,7 +628,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;FromTestToThemeButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
     <value>checkBox2</value>
@@ -613,7 +646,7 @@
     <value>Off</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 351</value>
+    <value>37, 369</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>882, 46</value>
@@ -631,7 +664,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
     <value>checkBox3</value>
@@ -649,7 +682,7 @@
     <value>Off</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 403</value>
+    <value>37, 421</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>882, 46</value>
@@ -667,7 +700,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
     <value>checkBox4</value>
@@ -685,7 +718,7 @@
     <value>Off</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 455</value>
+    <value>37, 473</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>882, 46</value>
@@ -703,7 +736,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
     <value>checkBox1</value>
@@ -721,7 +754,7 @@
     <value>Off</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 299</value>
+    <value>37, 317</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>882, 46</value>
@@ -739,7 +772,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 29</value>
@@ -763,7 +796,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>178, 82</value>
@@ -773,6 +806,9 @@
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="panel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
@@ -786,31 +822,31 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
   </data>
-  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
   </data>
-  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox4.Text" xml:space="preserve">
-    <value>checkBox4</value>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>checkBox2</value>
   </data>
-  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
-    <value>checkBox4</value>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
   </data>
-  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
-    <value>panel6</value>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>panel4</value>
   </data>
-  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
@@ -840,31 +876,31 @@
   <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
   </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
   </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox2.Text" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>checkBox4</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>panel6</value>
   </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">

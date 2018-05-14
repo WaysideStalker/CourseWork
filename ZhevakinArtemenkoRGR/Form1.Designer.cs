@@ -41,17 +41,18 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.NextThemeFormFromTest = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.FromTestToThemeButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.ErorInputLabel = new System.Windows.Forms.Label();
+            this.AnsverOnTest_ThinButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -194,8 +195,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Controls.Add(this.AnsverOnTest_ThinButton);
+            this.panel2.Controls.Add(this.ErorInputLabel);
             this.panel2.Controls.Add(this.NextThemeFormFromTest);
-            this.panel2.Controls.Add(this.bunifuThinButton24);
             this.panel2.Controls.Add(this.FromTestToThemeButton);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel5);
@@ -204,26 +206,6 @@
             this.panel2.Controls.Add(this.richTextBox2);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.bunifuThinButton24, "bunifuThinButton24");
-            this.bunifuThinButton24.ButtonText = "ThinButton";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FromTestToThemeButton
             // 
@@ -256,6 +238,13 @@
             this.panel4.MouseEnter += new System.EventHandler(this.panel5_MouseEnter);
             this.panel4.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
             // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox2_MouseClick);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
@@ -265,6 +254,13 @@
             this.panel5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox3_MouseClick);
             this.panel5.MouseEnter += new System.EventHandler(this.panel6_MouseEnter);
             this.panel5.MouseLeave += new System.EventHandler(this.panel6_MouseLeave);
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox3_MouseClick);
             // 
             // panel6
             // 
@@ -276,6 +272,13 @@
             this.panel6.MouseEnter += new System.EventHandler(this.panel7_MouseEnter);
             this.panel6.MouseLeave += new System.EventHandler(this.panel7_MouseLeave);
             // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox4_MouseClick);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
@@ -286,6 +289,13 @@
             this.panel3.MouseEnter += new System.EventHandler(this.panel4_MouseEnter);
             this.panel3.MouseLeave += new System.EventHandler(this.panel4_MouseLeave);
             // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseClick);
+            // 
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.DarkGray;
@@ -293,33 +303,32 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             // 
-            // checkBox4
+            // ErorInputLabel
             // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox4_MouseClick);
+            resources.ApplyResources(this.ErorInputLabel, "ErorInputLabel");
+            this.ErorInputLabel.ForeColor = System.Drawing.Color.Red;
+            this.ErorInputLabel.Name = "ErorInputLabel";
             // 
-            // checkBox3
+            // AnsverOnTest_ThinButton
             // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox3_MouseClick);
-            // 
-            // checkBox2
-            // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox2_MouseClick);
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseClick);
+            this.AnsverOnTest_ThinButton.ActiveBorderThickness = 1;
+            this.AnsverOnTest_ThinButton.ActiveCornerRadius = 20;
+            this.AnsverOnTest_ThinButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.ActiveForecolor = System.Drawing.Color.White;
+            this.AnsverOnTest_ThinButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.AnsverOnTest_ThinButton, "AnsverOnTest_ThinButton");
+            this.AnsverOnTest_ThinButton.ButtonText = "Ответить";
+            this.AnsverOnTest_ThinButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnsverOnTest_ThinButton.ForeColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.IdleBorderThickness = 1;
+            this.AnsverOnTest_ThinButton.IdleCornerRadius = 20;
+            this.AnsverOnTest_ThinButton.IdleFillColor = System.Drawing.Color.White;
+            this.AnsverOnTest_ThinButton.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.Name = "AnsverOnTest_ThinButton";
+            this.AnsverOnTest_ThinButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AnsverOnTest_ThinButton.Click += new System.EventHandler(this.AnsverOnTest_ThinButton_Click);
             // 
             // Form1
             // 
@@ -333,9 +342,9 @@
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -361,7 +370,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 MoveToPreviousThemeForm;
         private Bunifu.Framework.UI.BunifuThinButton2 NextThemeFormFromTest;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 FromTestToThemeButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
@@ -373,6 +381,8 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 AnsverOnTest_ThinButton;
+        private System.Windows.Forms.Label ErorInputLabel;
     }
 }
 
