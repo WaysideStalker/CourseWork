@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+
+namespace myLab
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inputString;
+            Strings stringsObject = new Strings();            
+            while (true)
+            {
+                Console.WriteLine("Menu\n" +
+                                  "1. Input String\n" +
+                                  "2. Show word Array with iterators\n" +
+                                  "3. Exit");
+                int userChoice = Convert.ToInt32(Console.ReadLine());
+                switch (userChoice)
+                {
+                    case 1:
+                    {
+                        Console.WriteLine("Input your string:");
+                        inputString = Console.ReadLine();
+
+                        stringsObject.Performance(inputString);
+                    }
+                        break;
+                    case 2:
+                    {
+                        foreach (var i in stringsObject)
+                            { 
+                            Console.WriteLine(i.ToString());
+                        }
+                    }
+                        break;
+                    case 3:
+                    {
+                       
+                    }
+                        break;
+                    default:
+                    {
+                        Console.WriteLine("Error input, try one more time\n");
+                    }
+                        break;
+                }
+
+                Console.ReadLine();
+                Console.Clear();
+            }
+        }
+    }
+}
