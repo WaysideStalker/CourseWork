@@ -11,10 +11,9 @@ namespace ZhevakinArtemenkoRGR
     {
         public static List<List<string>> ListsList = new List<List<string>>();
         public static int _indexOfCurrent;
-
         private static string ReadFromSourceFile(string fileName)
         {
-            using (StreamReader readFile = new StreamReader($@"DataBase\{fileName}"))
+            using (StreamReader readFile = new StreamReader($@"DataBase\{fileName}", Encoding.UTF8))
             {
                 return readFile.ReadToEnd();
             }

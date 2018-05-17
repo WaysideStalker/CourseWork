@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ZhevakinArtemenkoRGR
 {
     public partial class Form1 : Form
     {
-        private readonly List<CheckBox>varianToUSeCheckBoxs;
+        private readonly List<CheckBox> _varianToUSeCheckBoxs;
         private  int _indexOfCurrentTest;
         private readonly string[]_answersForTest;
         private readonly string[]_correctAnswersForTest;
@@ -26,9 +27,9 @@ namespace ZhevakinArtemenkoRGR
             richTextBox1.Text = text;
             richTextBox2.Text = test;
 
-            varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
-            for (int i = 0; i < varianToUSeCheckBoxs.Count; i++)
-                varianToUSeCheckBoxs[i].Text = answers[i];
+            _varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
+            for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
+                _varianToUSeCheckBoxs[i].Text = answers[i];
 
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox2.BorderStyle = BorderStyle.None;
@@ -127,6 +128,7 @@ namespace ZhevakinArtemenkoRGR
                 }
             }
         }
+
         public void CreateNewForm(int indexFormToCreate)
         {
             StartPage.existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
@@ -139,15 +141,10 @@ namespace ZhevakinArtemenkoRGR
 
             StartPage.existForms[indexFormToCreate].Show();
         }
-        private void NextTest()
-        {
-            _indexOfCurrentTest++;
-            for (int i = 0; i < varianToUSeCheckBoxs.Count; i++)
-                varianToUSeCheckBoxs[i].Text = _answersForTest[i + _indexOfCurrentTest * 4];
-        }
+
         private void AnsverOnTest_ThinButton_Click(object sender, EventArgs e)
         {
-            foreach (var i in varianToUSeCheckBoxs)
+            foreach (var i in _varianToUSeCheckBoxs)
             {
                 if (i.Checked)
                 {
@@ -162,5 +159,13 @@ namespace ZhevakinArtemenkoRGR
                 }
             }            
         }
+        private void NextTest()
+        {
+            _indexOfCurrentTest++;
+            for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
+                _varianToUSeCheckBoxs[i].Text = _answersForTest[i + _indexOfCurrentTest * 4];
+        }
+
+
     }
 }

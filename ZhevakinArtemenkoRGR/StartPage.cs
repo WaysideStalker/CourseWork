@@ -12,12 +12,13 @@ namespace ZhevakinArtemenkoRGR
 {
     public partial class StartPage : Form
     {
+        public static List<Form1> existForms = new List<Form1>() { null, null, null, null, null };
         public StartPage()
         {
             InitializeComponent();
             FormsToUSe._indexOfCurrent = 0;
         }
-        public static  List<Form1> existForms = new List<Form1>() { null, null, null, null, null };
+        
         public  void bunifuThinButton21_Click(object sender, EventArgs e) => OpenForm(0);
         public void Theme2_Click(object sender, EventArgs e) => OpenForm(1);
         public void Theme3_Click(object sender, EventArgs e) => OpenForm(2);
@@ -46,7 +47,6 @@ namespace ZhevakinArtemenkoRGR
             if (indexFormToCreate == 0)
                 existForms[indexFormToCreate].HideButtonToPrevious();
             if (indexFormToCreate == existForms.Count - 1)
-
                 existForms[indexFormToCreate].HideButtonToNext();
             Hide();
             existForms[indexFormToCreate].Show();
