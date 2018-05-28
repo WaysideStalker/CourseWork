@@ -18,31 +18,46 @@ namespace ZhevakinArtemenkoRGR
         private int _indexOfCurrentTest;
         private readonly string[] _answersForTest;
         private readonly string[] _correctAnswersForTest;
-        private readonly int coloredTextBoxHight;
-        private readonly int trueFalseVariantsPanelHight;
+        private readonly int _coloredTextBoxHight;
+        private readonly int _trueFalseVariantsPanelHight;
+        private string[] _fullTextAndExamplesStrings;
+        private string[][] _delimitedTextAndExamplesStrings;
 
         public Form1(string text, string test, string[] answers, string[] correctAnswers)
         {
             InitializeComponent();
             _indexOfCurrentTest = 0;
             _answersForTest = answers;
-            _correctAnswersForTest = correctAnswers;
-            richTextBox1.Text = text;
-            richTextBox2.Text = test;
-
+            _correctAnswersForTest = correctAnswers;           
+            richTextBox2.Text = test;//////////////////////
+            richTextBox3.Text = text;
             _varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
-            for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
-                _varianToUSeCheckBoxs[i].Text = answers[i];
-
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox2.BorderStyle = BorderStyle.None;
-
 
             panel2.Visible = false;
             fastColoredTextBox1.ReadOnly = true;
             fastColoredTextBox2.ReadOnly = true;
-            coloredTextBoxHight = fastColoredTextBox1.Size.Height;
-            trueFalseVariantsPanelHight = trueFalseVariantsPanel.Size.Height;
+
+            _coloredTextBoxHight = fastColoredTextBox1.Size.Height;
+            _trueFalseVariantsPanelHight = trueFalseVariantsPanel.Size.Height;
+           // RichTextBoxesTakeText(text);
+            CheckBoxGetTestText(answers);
+        }
+
+        private void CheckBoxGetTestText(string[] answers)
+        {
+            for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
+                _varianToUSeCheckBoxs[i].Text = answers[i];
+        }
+        private void RichTextBoxesTakeText(string input)
+        {
+
+            _fullTextAndExamplesStrings = input.Split('\n');
+            for (int i = 0; i < _fullTextAndExamplesStrings.Length; i++)
+                _delimitedTextAndExamplesStrings[i] = _fullTextAndExamplesStrings[i].Split('$');
+            richTextBox1.Text = _delimitedTextAndExamplesStrings[0][0];
+            richTextBox3.Text = _delimitedTextAndExamplesStrings[1][0];
+            richTextBox4.Text = _delimitedTextAndExamplesStrings[2][0];
+            richTextBox5.Text = _delimitedTextAndExamplesStrings[3][0];
         }
 
         public void bunifuThinButton26_Click(object sender, EventArgs e)
@@ -202,7 +217,7 @@ namespace ZhevakinArtemenkoRGR
             int amountCorrect = new Regex("\n").Matches(correctCodeExemple + "\n").Count;
             int amountIncorrect = new Regex("\n").Matches(incorrectCodeExample + "\n").Count;
             trueFalseVariantsPanel.Size = new Size(trueFalseVariantsPanel.Size.Width,
-                trueFalseVariantsPanelHight - coloredTextBoxHight + (amountIncorrect> amountCorrect ? amountIncorrect : amountCorrect ) * 15 + 2);
+                _trueFalseVariantsPanelHight - _coloredTextBoxHight + (amountIncorrect> amountCorrect ? amountIncorrect : amountCorrect ) * 15 + 2);
             fastColoredTextBox1.Text = correctCodeExemple;
             fastColoredTextBox2.Text = incorrectCodeExample;
         }
