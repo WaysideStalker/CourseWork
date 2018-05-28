@@ -42,7 +42,7 @@ namespace ZhevakinArtemenkoRGR
         }
         public void CreateNewForm(int indexFormToCreate)
         {
-            existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0], FormsToUSe.ListsList[indexFormToCreate][1], FormsToUSe.ListsList[indexFormToCreate][2].Split('\n'), FormsToUSe.ListsList[indexFormToCreate][3].Split('\n')));
+            existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0], FormsToUSe.ListsList[indexFormToCreate][1]));
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 existForms[indexFormToCreate].HideButtonToPrevious();

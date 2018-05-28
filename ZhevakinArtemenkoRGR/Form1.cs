@@ -16,35 +16,54 @@ namespace ZhevakinArtemenkoRGR
     {
         private readonly List<CheckBox> _varianToUSeCheckBoxs;
         private int _indexOfCurrentTest;
-        private readonly string[] _answersForTest;
-        private readonly string[] _correctAnswersForTest;
-        private readonly int coloredTextBoxHight;
+  
+        private  string[] _correctAnswersForTest;
         private readonly int trueFalseVariantsPanelHight;
+        List<RichTextBox> RichTextBoxList = new List<RichTextBox>();
+        private string[][] _textCorrectIncorrectCodeStrings = new string[10][];
+        private string[][] _testQuestionAndAnsverStrings = new string[5][];
 
-        public Form1(string text, string test, string[] answers, string[] correctAnswers)
+        public Form1(string[] text, string[] test)
         {
             InitializeComponent();
             _indexOfCurrentTest = 0;
-            _answersForTest = answers;
-            _correctAnswersForTest = correctAnswers;
-            richTextBox1.Text = text;
-            richTextBox2.Text = test;
+            DelimitedTextStringTo2Array(text);
+            DelimitedTestStringTo2Array(test);
+            //_answersForTest = answers;
+            //_correctAnswersForTest = correctAnswers;
+            //richTextBox2.Text = test;
 
             _varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
-            for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
-                _varianToUSeCheckBoxs[i].Text = answers[i];
+            //for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
+            //  _varianToUSeCheckBoxs[i].Text = answers[i];
 
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox2.BorderStyle = BorderStyle.None;
+
 
 
             panel2.Visible = false;
             fastColoredTextBox1.ReadOnly = true;
             fastColoredTextBox2.ReadOnly = true;
-            coloredTextBoxHight = fastColoredTextBox1.Size.Height;
-            trueFalseVariantsPanelHight = trueFalseVariantsPanel.Size.Height;
         }
+        private void DelimitedTestStringTo2Array(string[] test)
+        {
+            for (int i = 0; i < test.Length; i++)
+            {
+                _testQuestionAndAnsverStrings[i] = test[i].Split('$');
+            }
+            richTextBox2.Text = _testQuestionAndAnsverStrings[_indexOfCurrentTest][0];
+        }
+        private void DelimitedTextStringTo2Array(string[] text)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                _textCorrectIncorrectCodeStrings[i] = text[i].Split('$');
+            }
 
+            for (int i = 0; i < _textCorrectIncorrectCodeStrings.Length; i++)
+            {
+                RichTextBoxList[i].Text = _textCorrectIncorrectCodeStrings[i][0];
+            }
+        }
         public void bunifuThinButton26_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
@@ -150,8 +169,7 @@ namespace ZhevakinArtemenkoRGR
         public void CreateNewForm(int indexFormToCreate)
         {
             StartPage.existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
-                FormsToUSe.ListsList[indexFormToCreate][1], FormsToUSe.ListsList[indexFormToCreate][2].Split('\n'),
-                FormsToUSe.ListsList[indexFormToCreate][3].Split('\n')));
+                FormsToUSe.ListsList[indexFormToCreate][1]));
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 StartPage.existForms[indexFormToCreate].HideButtonToPrevious();
@@ -182,47 +200,87 @@ namespace ZhevakinArtemenkoRGR
 
         private void NextTest()
         {
+            richTextBox2.Text = _testQuestionAndAnsverStrings[_indexOfCurrentTest][0];
+            string[] ansvers = _testQuestionAndAnsverStrings[_indexOfCurrentTest][1].Split('\n');
             _indexOfCurrentTest++;
             for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
-                _varianToUSeCheckBoxs[i].Text = _answersForTest[i + _indexOfCurrentTest * 4];
+                _varianToUSeCheckBoxs[i].Text = ansvers[i];
         }
 
         private void exitTrueFalseButton_Click(object sender, EventArgs e)
         {
             trueFalseVariantsPanel.Visible = false;
         }
-        private void richTextBox1_MouseClick(object sender, MouseEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            showTrueFalsePanelAtRigthPlace(58, 144, "int hourDataTimeNow", "inc a");
-        }
-        private void showTrueFalsePanelAtRigthPlace(int xCoordinate, int yCoordinate, string correctCodeExemple, string incorrectCodeExample)
-        {
-            trueFalseVariantsPanel.Visible = true;
-            trueFalseVariantsPanel.Location = new Point(170 + xCoordinate, 90 + yCoordinate);
-            int amountCorrect = new Regex("\n").Matches(correctCodeExemple + "\n").Count;
-            int amountIncorrect = new Regex("\n").Matches(incorrectCodeExample + "\n").Count;
-            trueFalseVariantsPanel.Size = new Size(trueFalseVariantsPanel.Size.Width,
-                trueFalseVariantsPanelHight - coloredTextBoxHight + (amountIncorrect> amountCorrect ? amountIncorrect : amountCorrect ) * 15 + 2);
-            fastColoredTextBox1.Text = correctCodeExemple;
-            fastColoredTextBox2.Text = incorrectCodeExample;
-        }
-
-        private void richTextBox3_MouseClick(object sender, MouseEventArgs e)
-        {
-
-
-            showTrueFalsePanelAtRigthPlace(57, 259, "int fullDataTime\n123", "inc a");
-        }
-
-        private void richTextBox4_MouseClick(object sender, MouseEventArgs e)
-        {
-            showTrueFalsePanelAtRigthPlace(58, 0, "int dataTimeNowHours", "inc a");
-
+            for (int i = 0; i < 10; i++)
+            {
+                RichTextBoxList.Add(new RichTextBox()
+                {
+                    ReadOnly = true,
+                    Size = new Size(800, 50),
+                    Location = new Point(10, (panel7.Controls.Count) * 50)
+                });
+                panel7.Controls.Add(RichTextBoxList[i]);
+            }
+            RichTextBoxList[0].MouseClick += richTextBoxListItem0_MouseClick;
+            RichTextBoxList[1].MouseClick += richTextBoxListItem1_MouseClick;
+            RichTextBoxList[2].MouseClick += richTextBoxListItem2_MouseClick;
+            RichTextBoxList[3].MouseClick += richTextBoxListItem3_MouseClick;
+            RichTextBoxList[4].MouseClick += richTextBoxListItem4_MouseClick;
+            RichTextBoxList[5].MouseClick += richTextBoxListItem5_MouseClick;
+            RichTextBoxList[6].MouseClick += richTextBoxListItem6_MouseClick;
+            RichTextBoxList[7].MouseClick += richTextBoxListItem7_MouseClick;
+            RichTextBoxList[8].MouseClick += richTextBoxListItem8_MouseClick;
+            RichTextBoxList[9].MouseClick += richTextBoxListItem9_MouseClick;
         }
 
-        private void richTextBox5_MouseClick(object sender, MouseEventArgs e)
+        private void richTextBoxListItems_AddText(int numberForm)
         {
-            showTrueFalsePanelAtRigthPlace(58, 29, "int dataTimeNowHours", "inc a");
+            fastColoredTextBox1.Text = _textCorrectIncorrectCodeStrings[numberForm][1];
+            fastColoredTextBox2.Text = _textCorrectIncorrectCodeStrings[numberForm][2];
+        }
+
+        private void richTextBoxListItem0_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(0);
+        }
+        private void richTextBoxListItem1_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(1);
+        }
+        private void richTextBoxListItem2_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(2);
+        }
+        private void richTextBoxListItem3_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(3);
+        }
+        private void richTextBoxListItem4_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(4);
+        }
+        private void richTextBoxListItem5_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(5);
+        }
+        private void richTextBoxListItem6_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(6);
+        }
+        private void richTextBoxListItem7_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(7);
+        }
+        private void richTextBoxListItem8_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(8);
+
+        }
+        private void richTextBoxListItem9_MouseClick(object sender, MouseEventArgs e)
+        {
+            richTextBoxListItems_AddText(9);
         }
     }
 }
