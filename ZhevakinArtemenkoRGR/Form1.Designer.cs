@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
@@ -35,12 +36,23 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.NextThemeFormFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
             this.MoveToTestFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
             this.MoveToPreviousThemeForm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.NextThemeFormFromTest = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.trueFalseVariantsPanel = new System.Windows.Forms.Panel();
+            this.exitTrueFalseButton = new MetroFramework.Controls.MetroButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fastColoredTextBox2 = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.AnsverOnTest_ThinButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ErorInputLabel = new System.Windows.Forms.Label();
+            this.NextThemeFormFromTest = new Bunifu.Framework.UI.BunifuThinButton2();
             this.FromTestToThemeButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel4 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -51,9 +63,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.ErorInputLabel = new System.Windows.Forms.Label();
-            this.AnsverOnTest_ThinButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
+            this.trueFalseVariantsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -94,12 +107,42 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.richTextBox5);
+            this.panel1.Controls.Add(this.richTextBox4);
+            this.panel1.Controls.Add(this.richTextBox3);
             this.panel1.Controls.Add(this.NextThemeFormFromTheme);
             this.panel1.Controls.Add(this.MoveToTestFromTheme);
             this.panel1.Controls.Add(this.MoveToPreviousThemeForm);
             this.panel1.Controls.Add(this.richTextBox1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.BackColor = System.Drawing.Color.DarkGray;
+            this.richTextBox5.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.richTextBox5, "richTextBox5");
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.ReadOnly = true;
+            this.richTextBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox5_MouseClick);
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.BackColor = System.Drawing.Color.DarkGray;
+            this.richTextBox4.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.richTextBox4, "richTextBox4");
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox4_MouseClick);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.Color.DarkGray;
+            this.richTextBox3.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.richTextBox3, "richTextBox3");
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox3_MouseClick);
             // 
             // NextThemeFormFromTheme
             // 
@@ -167,9 +210,149 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseClick);
+            // 
+            // trueFalseVariantsPanel
+            // 
+            this.trueFalseVariantsPanel.BackColor = System.Drawing.Color.GhostWhite;
+            this.trueFalseVariantsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.trueFalseVariantsPanel.Controls.Add(this.exitTrueFalseButton);
+            this.trueFalseVariantsPanel.Controls.Add(this.label2);
+            this.trueFalseVariantsPanel.Controls.Add(this.label1);
+            this.trueFalseVariantsPanel.Controls.Add(this.fastColoredTextBox2);
+            this.trueFalseVariantsPanel.Controls.Add(this.fastColoredTextBox1);
+            resources.ApplyResources(this.trueFalseVariantsPanel, "trueFalseVariantsPanel");
+            this.trueFalseVariantsPanel.Name = "trueFalseVariantsPanel";
+            // 
+            // exitTrueFalseButton
+            // 
+            this.exitTrueFalseButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            resources.ApplyResources(this.exitTrueFalseButton, "exitTrueFalseButton");
+            this.exitTrueFalseButton.Name = "exitTrueFalseButton";
+            this.exitTrueFalseButton.Style = MetroFramework.MetroColorStyle.White;
+            this.exitTrueFalseButton.Click += new System.EventHandler(this.exitTrueFalseButton_Click);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.GhostWhite;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.GhostWhite;
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Name = "label1";
+            // 
+            // fastColoredTextBox2
+            // 
+            this.fastColoredTextBox2.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            resources.ApplyResources(this.fastColoredTextBox2, "fastColoredTextBox2");
+            this.fastColoredTextBox2.BackBrush = null;
+            this.fastColoredTextBox2.BackColor = System.Drawing.Color.GhostWhite;
+            this.fastColoredTextBox2.CharHeight = 14;
+            this.fastColoredTextBox2.CharWidth = 8;
+            this.fastColoredTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fastColoredTextBox2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox2.IsReplaceMode = false;
+            this.fastColoredTextBox2.Name = "fastColoredTextBox2";
+            this.fastColoredTextBox2.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox2.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastColoredTextBox2.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox2.ServiceColors")));
+            this.fastColoredTextBox2.Zoom = 100;
+            // 
+            // fastColoredTextBox1
+            // 
+            this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            this.fastColoredTextBox1.AutoIndentCharsPatterns = "\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>[^;]+);\n^\\s*(case|default)\\s*[^:]*(" +
+    "?<range>:)\\s*(?<range>[^;]+);\n";
+            resources.ApplyResources(this.fastColoredTextBox1, "fastColoredTextBox1");
+            this.fastColoredTextBox1.BackBrush = null;
+            this.fastColoredTextBox1.BackColor = System.Drawing.Color.GhostWhite;
+            this.fastColoredTextBox1.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
+            this.fastColoredTextBox1.CharHeight = 14;
+            this.fastColoredTextBox1.CharWidth = 8;
+            this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.IsReplaceMode = false;
+            this.fastColoredTextBox1.Language = FastColoredTextBoxNS.Language.CSharp;
+            this.fastColoredTextBox1.LeftBracket = '(';
+            this.fastColoredTextBox1.LeftBracket2 = '{';
+            this.fastColoredTextBox1.Name = "fastColoredTextBox1";
+            this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox1.RightBracket = ')';
+            this.fastColoredTextBox1.RightBracket2 = '}';
+            this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
+            this.fastColoredTextBox1.Zoom = 100;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Controls.Add(this.AnsverOnTest_ThinButton);
+            this.panel2.Controls.Add(this.ErorInputLabel);
+            this.panel2.Controls.Add(this.NextThemeFormFromTest);
+            this.panel2.Controls.Add(this.FromTestToThemeButton);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.richTextBox2);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // AnsverOnTest_ThinButton
+            // 
+            this.AnsverOnTest_ThinButton.ActiveBorderThickness = 1;
+            this.AnsverOnTest_ThinButton.ActiveCornerRadius = 20;
+            this.AnsverOnTest_ThinButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.ActiveForecolor = System.Drawing.Color.White;
+            this.AnsverOnTest_ThinButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.AnsverOnTest_ThinButton, "AnsverOnTest_ThinButton");
+            this.AnsverOnTest_ThinButton.ButtonText = "Ответить";
+            this.AnsverOnTest_ThinButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnsverOnTest_ThinButton.ForeColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.IdleBorderThickness = 1;
+            this.AnsverOnTest_ThinButton.IdleCornerRadius = 20;
+            this.AnsverOnTest_ThinButton.IdleFillColor = System.Drawing.Color.White;
+            this.AnsverOnTest_ThinButton.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.AnsverOnTest_ThinButton.Name = "AnsverOnTest_ThinButton";
+            this.AnsverOnTest_ThinButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AnsverOnTest_ThinButton.Click += new System.EventHandler(this.AnsverOnTest_ThinButton_Click);
+            // 
+            // ErorInputLabel
+            // 
+            resources.ApplyResources(this.ErorInputLabel, "ErorInputLabel");
+            this.ErorInputLabel.ForeColor = System.Drawing.Color.Red;
+            this.ErorInputLabel.Name = "ErorInputLabel";
             // 
             // NextThemeFormFromTest
             // 
@@ -191,21 +374,6 @@
             this.NextThemeFormFromTest.Name = "NextThemeFormFromTest";
             this.NextThemeFormFromTest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.NextThemeFormFromTest.Click += new System.EventHandler(this.bunifuThinButton23_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Controls.Add(this.AnsverOnTest_ThinButton);
-            this.panel2.Controls.Add(this.ErorInputLabel);
-            this.panel2.Controls.Add(this.NextThemeFormFromTest);
-            this.panel2.Controls.Add(this.FromTestToThemeButton);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.richTextBox2);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
             // 
             // FromTestToThemeButton
             // 
@@ -303,46 +471,25 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             // 
-            // ErorInputLabel
-            // 
-            resources.ApplyResources(this.ErorInputLabel, "ErorInputLabel");
-            this.ErorInputLabel.ForeColor = System.Drawing.Color.Red;
-            this.ErorInputLabel.Name = "ErorInputLabel";
-            // 
-            // AnsverOnTest_ThinButton
-            // 
-            this.AnsverOnTest_ThinButton.ActiveBorderThickness = 1;
-            this.AnsverOnTest_ThinButton.ActiveCornerRadius = 20;
-            this.AnsverOnTest_ThinButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.AnsverOnTest_ThinButton.ActiveForecolor = System.Drawing.Color.White;
-            this.AnsverOnTest_ThinButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.AnsverOnTest_ThinButton.BackColor = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.AnsverOnTest_ThinButton, "AnsverOnTest_ThinButton");
-            this.AnsverOnTest_ThinButton.ButtonText = "Ответить";
-            this.AnsverOnTest_ThinButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnsverOnTest_ThinButton.ForeColor = System.Drawing.Color.SeaGreen;
-            this.AnsverOnTest_ThinButton.IdleBorderThickness = 1;
-            this.AnsverOnTest_ThinButton.IdleCornerRadius = 20;
-            this.AnsverOnTest_ThinButton.IdleFillColor = System.Drawing.Color.White;
-            this.AnsverOnTest_ThinButton.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.AnsverOnTest_ThinButton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.AnsverOnTest_ThinButton.Name = "AnsverOnTest_ThinButton";
-            this.AnsverOnTest_ThinButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AnsverOnTest_ThinButton.Click += new System.EventHandler(this.AnsverOnTest_ThinButton_Click);
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.trueFalseVariantsPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroButton5);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.panel1.ResumeLayout(false);
+            this.trueFalseVariantsPanel.ResumeLayout(false);
+            this.trueFalseVariantsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -383,6 +530,15 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 AnsverOnTest_ThinButton;
         private System.Windows.Forms.Label ErorInputLabel;
+        private System.Windows.Forms.Panel trueFalseVariantsPanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox2;
+        private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
+        private MetroFramework.Controls.MetroButton exitTrueFalseButton;
+        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
 
