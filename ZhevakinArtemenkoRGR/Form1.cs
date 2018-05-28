@@ -193,12 +193,12 @@ namespace ZhevakinArtemenkoRGR
         }
         private void richTextBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            showTrueFalsePanelAtRigthPlace(58, 0, "int hourDataTimeNow", "inc a");
+            showTrueFalsePanelAtRigthPlace(58, 144, "int hourDataTimeNow", "inc a");
         }
         private void showTrueFalsePanelAtRigthPlace(int xCoordinate, int yCoordinate, string correctCodeExemple, string incorrectCodeExample)
         {
             trueFalseVariantsPanel.Visible = true;
-            trueFalseVariantsPanel.Location = new Point(170 + xCoordinate,0);
+            trueFalseVariantsPanel.Location = new Point(170 + xCoordinate, 90 + yCoordinate);
             int amountCorrect = new Regex("\n").Matches(correctCodeExemple + "\n").Count;
             int amountIncorrect = new Regex("\n").Matches(incorrectCodeExample + "\n").Count;
             trueFalseVariantsPanel.Size = new Size(trueFalseVariantsPanel.Size.Width,
@@ -210,7 +210,8 @@ namespace ZhevakinArtemenkoRGR
         private void richTextBox3_MouseClick(object sender, MouseEventArgs e)
         {
 
-            showTrueFalsePanelAtRigthPlace(57, 0, "int fullDataTime\n123", "inc a");
+
+            showTrueFalsePanelAtRigthPlace(57, 259, "int fullDataTime\n123", "inc a");
         }
 
         private void richTextBox4_MouseClick(object sender, MouseEventArgs e)
@@ -221,7 +222,7 @@ namespace ZhevakinArtemenkoRGR
 
         private void richTextBox5_MouseClick(object sender, MouseEventArgs e)
         {
-            showTrueFalsePanelAtRigthPlace(58, 0, "int dataTimeNowHours", "inc a");
+            showTrueFalsePanelAtRigthPlace(58, 29, "int dataTimeNowHours", "inc a");
         }
     }
 }
