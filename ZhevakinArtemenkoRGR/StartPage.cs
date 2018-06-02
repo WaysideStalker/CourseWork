@@ -16,7 +16,6 @@ namespace ZhevakinArtemenkoRGR
         public StartPage()
         {
             InitializeComponent();
-            FormsToUSe._indexOfCurrent = 0;
         }
         
         public  void bunifuThinButton21_Click(object sender, EventArgs e) => OpenForm(0);

@@ -103,7 +103,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.BackColor = System.Drawing.Color.OliveDrab;
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.trueFalseVariantsPanel);
             this.panel1.Controls.Add(this.NextThemeFormFromTheme);
@@ -115,6 +115,7 @@
             // panel7
             // 
             resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.BackColor = System.Drawing.Color.GhostWhite;
             this.panel7.Name = "panel7";
             // 
             // trueFalseVariantsPanel
@@ -172,8 +173,10 @@
             this.fastColoredTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox2.IsReplaceMode = false;
+            this.fastColoredTextBox2.Language = FastColoredTextBoxNS.Language.CSharp;
             this.fastColoredTextBox2.Name = "fastColoredTextBox2";
             this.fastColoredTextBox2.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox2.ReadOnly = true;
             this.fastColoredTextBox2.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fastColoredTextBox2.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox2.ServiceColors")));
             this.fastColoredTextBox2.Zoom = 100;
@@ -207,6 +210,7 @@
             this.fastColoredTextBox1.LeftBracket2 = '{';
             this.fastColoredTextBox1.Name = "fastColoredTextBox1";
             this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox1.ReadOnly = true;
             this.fastColoredTextBox1.RightBracket = ')';
             this.fastColoredTextBox1.RightBracket2 = '}';
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
@@ -220,7 +224,7 @@
             this.NextThemeFormFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.NextThemeFormFromTheme.ActiveForecolor = System.Drawing.Color.White;
             this.NextThemeFormFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.NextThemeFormFromTheme.BackColor = System.Drawing.Color.OliveDrab;
             resources.ApplyResources(this.NextThemeFormFromTheme, "NextThemeFormFromTheme");
             this.NextThemeFormFromTheme.ButtonText = "К Следующей теме ->";
             this.NextThemeFormFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -241,7 +245,7 @@
             this.MoveToTestFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.MoveToTestFromTheme.ActiveForecolor = System.Drawing.Color.White;
             this.MoveToTestFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.MoveToTestFromTheme.BackColor = System.Drawing.Color.OliveDrab;
             resources.ApplyResources(this.MoveToTestFromTheme, "MoveToTestFromTheme");
             this.MoveToTestFromTheme.ButtonText = "К Тесту ->";
             this.MoveToTestFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -262,7 +266,7 @@
             this.MoveToPreviousThemeForm.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.MoveToPreviousThemeForm.ActiveForecolor = System.Drawing.Color.White;
             this.MoveToPreviousThemeForm.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.MoveToPreviousThemeForm.BackColor = System.Drawing.Color.OliveDrab;
             resources.ApplyResources(this.MoveToPreviousThemeForm, "MoveToPreviousThemeForm");
             this.MoveToPreviousThemeForm.ButtonText = "<- К Прошлой теме ";
             this.MoveToPreviousThemeForm.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -448,7 +452,6 @@
             this.Controls.Add(this.metroButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.trueFalseVariantsPanel.ResumeLayout(false);
             this.trueFalseVariantsPanel.PerformLayout();

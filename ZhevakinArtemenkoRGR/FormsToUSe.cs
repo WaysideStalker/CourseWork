@@ -20,9 +20,10 @@ namespace ZhevakinArtemenkoRGR
                 {
                     while (true)
                     {
-                        if (readFile.ReadLine() == "^\n")
+                        var readline = readFile.ReadLine();
+                        if (readline == "^")
                             break;
-                        themeAndGoodBadStyles[i] += readFile.ReadLine();
+                        themeAndGoodBadStyles[i] += readline +"\n";
                     }
                 }
             }
@@ -31,9 +32,10 @@ namespace ZhevakinArtemenkoRGR
         }
         static FormsToUSe()
         {
-            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt") });
-            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt") });
-            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstTheme.txt"), ReadFromSourceFile("FirstTest.txt") });
+            _indexOfCurrent = 0;
+            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstParts.txt"), ReadFromSourceFile("FirstParts.txt") });
+            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstParts.txt"), ReadFromSourceFile("FirstParts.txt") });
+            ListsList.Add(new List<string[]>() { ReadFromSourceFile("FirstParts.txt"), ReadFromSourceFile("FirstParts.txt") });
 
         }
     }

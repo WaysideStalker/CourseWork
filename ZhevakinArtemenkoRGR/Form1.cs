@@ -26,6 +26,7 @@ namespace ZhevakinArtemenkoRGR
         public Form1(string[] text, string[] test)
         {
             InitializeComponent();
+            InizializeRichTextBoxComponents();
             _indexOfCurrentTest = 0;
             DelimitedTextStringTo2Array(text);
             DelimitedTestStringTo2Array(test);
@@ -46,7 +47,7 @@ namespace ZhevakinArtemenkoRGR
         }
         private void DelimitedTestStringTo2Array(string[] test)
         {
-            for (int i = 0; i < test.Length; i++)
+            for (int i = 0; i <5; i++)////////////////////////
             {
                 _testQuestionAndAnsverStrings[i] = test[i].Split('$');
             }
@@ -54,12 +55,12 @@ namespace ZhevakinArtemenkoRGR
         }
         private void DelimitedTextStringTo2Array(string[] text)
         {
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < 10; i++)///////////////////////
             {
                 _textCorrectIncorrectCodeStrings[i] = text[i].Split('$');
             }
 
-            for (int i = 0; i < _textCorrectIncorrectCodeStrings.Length; i++)
+            for (int i = 0; i < 10; i++)///////////////////
             {
                 RichTextBoxList[i].Text = _textCorrectIncorrectCodeStrings[i][0];
             }
@@ -211,7 +212,7 @@ namespace ZhevakinArtemenkoRGR
         {
             trueFalseVariantsPanel.Visible = false;
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void InizializeRichTextBoxComponents()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -239,6 +240,7 @@ namespace ZhevakinArtemenkoRGR
         {
             fastColoredTextBox1.Text = _textCorrectIncorrectCodeStrings[numberForm][1];
             fastColoredTextBox2.Text = _textCorrectIncorrectCodeStrings[numberForm][2];
+            trueFalseVariantsPanel.Visible = true;
         }
 
         private void richTextBoxListItem0_MouseClick(object sender, MouseEventArgs e)
