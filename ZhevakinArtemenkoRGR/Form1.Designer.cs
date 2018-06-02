@@ -36,19 +36,16 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.NextThemeFormFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.MoveToTestFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.MoveToPreviousThemeForm = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.trueFalseVariantsPanel = new System.Windows.Forms.Panel();
             this.exitTrueFalseButton = new MetroFramework.Controls.MetroButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fastColoredTextBox2 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.NextThemeFormFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.MoveToTestFromTheme = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.MoveToPreviousThemeForm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AnsverOnTest_ThinButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ErorInputLabel = new System.Windows.Forms.Label();
@@ -107,114 +104,18 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.richTextBox5);
-            this.panel1.Controls.Add(this.richTextBox4);
-            this.panel1.Controls.Add(this.richTextBox3);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.trueFalseVariantsPanel);
             this.panel1.Controls.Add(this.NextThemeFormFromTheme);
             this.panel1.Controls.Add(this.MoveToTestFromTheme);
             this.panel1.Controls.Add(this.MoveToPreviousThemeForm);
-            this.panel1.Controls.Add(this.richTextBox1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // richTextBox5
+            // panel7
             // 
-            this.richTextBox5.BackColor = System.Drawing.Color.DarkGray;
-            this.richTextBox5.ForeColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.richTextBox5, "richTextBox5");
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox5_MouseClick);
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.BackColor = System.Drawing.Color.DarkGray;
-            this.richTextBox4.ForeColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.richTextBox4, "richTextBox4");
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox4_MouseClick);
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.richTextBox3.ForeColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.richTextBox3, "richTextBox3");
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox3_MouseClick);
-            // 
-            // NextThemeFormFromTheme
-            // 
-            this.NextThemeFormFromTheme.ActiveBorderThickness = 1;
-            this.NextThemeFormFromTheme.ActiveCornerRadius = 20;
-            this.NextThemeFormFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.ActiveForecolor = System.Drawing.Color.White;
-            this.NextThemeFormFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.NextThemeFormFromTheme, "NextThemeFormFromTheme");
-            this.NextThemeFormFromTheme.ButtonText = "К Следующей теме ->";
-            this.NextThemeFormFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NextThemeFormFromTheme.ForeColor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.IdleBorderThickness = 1;
-            this.NextThemeFormFromTheme.IdleCornerRadius = 20;
-            this.NextThemeFormFromTheme.IdleFillColor = System.Drawing.Color.White;
-            this.NextThemeFormFromTheme.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.NextThemeFormFromTheme.Name = "NextThemeFormFromTheme";
-            this.NextThemeFormFromTheme.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.NextThemeFormFromTheme.Click += new System.EventHandler(this.NextThemeFormFromTheme_Click);
-            // 
-            // MoveToTestFromTheme
-            // 
-            this.MoveToTestFromTheme.ActiveBorderThickness = 1;
-            this.MoveToTestFromTheme.ActiveCornerRadius = 20;
-            this.MoveToTestFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.ActiveForecolor = System.Drawing.Color.White;
-            this.MoveToTestFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.MoveToTestFromTheme, "MoveToTestFromTheme");
-            this.MoveToTestFromTheme.ButtonText = "К Тесту ->";
-            this.MoveToTestFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MoveToTestFromTheme.ForeColor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.IdleBorderThickness = 1;
-            this.MoveToTestFromTheme.IdleCornerRadius = 20;
-            this.MoveToTestFromTheme.IdleFillColor = System.Drawing.Color.White;
-            this.MoveToTestFromTheme.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToTestFromTheme.Name = "MoveToTestFromTheme";
-            this.MoveToTestFromTheme.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MoveToTestFromTheme.Click += new System.EventHandler(this.bunifuThinButton26_Click);
-            // 
-            // MoveToPreviousThemeForm
-            // 
-            this.MoveToPreviousThemeForm.ActiveBorderThickness = 1;
-            this.MoveToPreviousThemeForm.ActiveCornerRadius = 20;
-            this.MoveToPreviousThemeForm.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.ActiveForecolor = System.Drawing.Color.White;
-            this.MoveToPreviousThemeForm.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.BackColor = System.Drawing.SystemColors.ControlDark;
-            resources.ApplyResources(this.MoveToPreviousThemeForm, "MoveToPreviousThemeForm");
-            this.MoveToPreviousThemeForm.ButtonText = "<- К Прошлой теме ";
-            this.MoveToPreviousThemeForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MoveToPreviousThemeForm.ForeColor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.IdleBorderThickness = 1;
-            this.MoveToPreviousThemeForm.IdleCornerRadius = 20;
-            this.MoveToPreviousThemeForm.IdleFillColor = System.Drawing.Color.White;
-            this.MoveToPreviousThemeForm.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.MoveToPreviousThemeForm.Name = "MoveToPreviousThemeForm";
-            this.MoveToPreviousThemeForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MoveToPreviousThemeForm.Click += new System.EventHandler(this.MoveToPreviousThemeForm_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseClick);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
             // 
             // trueFalseVariantsPanel
             // 
@@ -311,6 +212,69 @@
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
             this.fastColoredTextBox1.Zoom = 100;
+            // 
+            // NextThemeFormFromTheme
+            // 
+            this.NextThemeFormFromTheme.ActiveBorderThickness = 1;
+            this.NextThemeFormFromTheme.ActiveCornerRadius = 20;
+            this.NextThemeFormFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.NextThemeFormFromTheme.ActiveForecolor = System.Drawing.Color.White;
+            this.NextThemeFormFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.NextThemeFormFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.NextThemeFormFromTheme, "NextThemeFormFromTheme");
+            this.NextThemeFormFromTheme.ButtonText = "К Следующей теме ->";
+            this.NextThemeFormFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NextThemeFormFromTheme.ForeColor = System.Drawing.Color.SeaGreen;
+            this.NextThemeFormFromTheme.IdleBorderThickness = 1;
+            this.NextThemeFormFromTheme.IdleCornerRadius = 20;
+            this.NextThemeFormFromTheme.IdleFillColor = System.Drawing.Color.White;
+            this.NextThemeFormFromTheme.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.NextThemeFormFromTheme.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.NextThemeFormFromTheme.Name = "NextThemeFormFromTheme";
+            this.NextThemeFormFromTheme.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NextThemeFormFromTheme.Click += new System.EventHandler(this.NextThemeFormFromTheme_Click);
+            // 
+            // MoveToTestFromTheme
+            // 
+            this.MoveToTestFromTheme.ActiveBorderThickness = 1;
+            this.MoveToTestFromTheme.ActiveCornerRadius = 20;
+            this.MoveToTestFromTheme.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.MoveToTestFromTheme.ActiveForecolor = System.Drawing.Color.White;
+            this.MoveToTestFromTheme.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.MoveToTestFromTheme.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.MoveToTestFromTheme, "MoveToTestFromTheme");
+            this.MoveToTestFromTheme.ButtonText = "К Тесту ->";
+            this.MoveToTestFromTheme.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MoveToTestFromTheme.ForeColor = System.Drawing.Color.SeaGreen;
+            this.MoveToTestFromTheme.IdleBorderThickness = 1;
+            this.MoveToTestFromTheme.IdleCornerRadius = 20;
+            this.MoveToTestFromTheme.IdleFillColor = System.Drawing.Color.White;
+            this.MoveToTestFromTheme.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.MoveToTestFromTheme.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.MoveToTestFromTheme.Name = "MoveToTestFromTheme";
+            this.MoveToTestFromTheme.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MoveToTestFromTheme.Click += new System.EventHandler(this.bunifuThinButton26_Click);
+            // 
+            // MoveToPreviousThemeForm
+            // 
+            this.MoveToPreviousThemeForm.ActiveBorderThickness = 1;
+            this.MoveToPreviousThemeForm.ActiveCornerRadius = 20;
+            this.MoveToPreviousThemeForm.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.MoveToPreviousThemeForm.ActiveForecolor = System.Drawing.Color.White;
+            this.MoveToPreviousThemeForm.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.MoveToPreviousThemeForm.BackColor = System.Drawing.SystemColors.ControlDark;
+            resources.ApplyResources(this.MoveToPreviousThemeForm, "MoveToPreviousThemeForm");
+            this.MoveToPreviousThemeForm.ButtonText = "<- К Прошлой теме ";
+            this.MoveToPreviousThemeForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MoveToPreviousThemeForm.ForeColor = System.Drawing.Color.SeaGreen;
+            this.MoveToPreviousThemeForm.IdleBorderThickness = 1;
+            this.MoveToPreviousThemeForm.IdleCornerRadius = 20;
+            this.MoveToPreviousThemeForm.IdleFillColor = System.Drawing.Color.White;
+            this.MoveToPreviousThemeForm.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.MoveToPreviousThemeForm.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.MoveToPreviousThemeForm.Name = "MoveToPreviousThemeForm";
+            this.MoveToPreviousThemeForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MoveToPreviousThemeForm.Click += new System.EventHandler(this.MoveToPreviousThemeForm_Click);
             // 
             // panel2
             // 
@@ -475,7 +439,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.trueFalseVariantsPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroButton5);
             this.Controls.Add(this.panel2);
@@ -485,6 +448,7 @@
             this.Controls.Add(this.metroButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.trueFalseVariantsPanel.ResumeLayout(false);
             this.trueFalseVariantsPanel.PerformLayout();
@@ -512,7 +476,6 @@
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 MoveToTestFromTheme;
         private Bunifu.Framework.UI.BunifuThinButton2 MoveToPreviousThemeForm;
         private Bunifu.Framework.UI.BunifuThinButton2 NextThemeFormFromTest;
@@ -536,9 +499,7 @@
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox2;
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
         private MetroFramework.Controls.MetroButton exitTrueFalseButton;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 
