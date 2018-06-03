@@ -243,10 +243,10 @@
     <value>True</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 3</value>
+    <value>14, 15</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>880, 242</value>
+    <value>914, 230</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -261,6 +261,244 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exitTrueFalseButton.Name" xml:space="preserve">
+    <value>exitTrueFalseButton</value>
+  </data>
+  <data name="&gt;&gt;exitTrueFalseButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;exitTrueFalseButton.Parent" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;exitTrueFalseButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox2.Name" xml:space="preserve">
+    <value>fastColoredTextBox2</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox2.Type" xml:space="preserve">
+    <value>FastColoredTextBoxNS.FastColoredTextBox, FastColoredTextBox, Version=2.16.21.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox2.Parent" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox1.Name" xml:space="preserve">
+    <value>fastColoredTextBox1</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox1.Type" xml:space="preserve">
+    <value>FastColoredTextBoxNS.FastColoredTextBox, FastColoredTextBox, Version=2.16.21.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox1.Parent" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;fastColoredTextBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="trueFalseVariantsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 251</value>
+  </data>
+  <data name="trueFalseVariantsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>914, 256</value>
+  </data>
+  <data name="trueFalseVariantsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="trueFalseVariantsPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;trueFalseVariantsPanel.Name" xml:space="preserve">
+    <value>trueFalseVariantsPanel</value>
+  </data>
+  <data name="&gt;&gt;trueFalseVariantsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trueFalseVariantsPanel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;trueFalseVariantsPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NextThemeFormFromTheme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKYSURBVHhe7ZzPSxRhHIf7X6QICSmkgoqM7JerWcvK7rKb
+        VlgtEQRRBJ06eRCdcd1ZYougPHQQEiSCIJL2oB3qEFJheDAQ9lARRXiQOnzqMzNObTt5rH1fPg88IMyu
+        p2eXd97Z77vhgtsCKW1SUUvrVNTSOhW1tE5FLa1TUUvrXDfq8+5GpJ3t6C4lcdjLYs94Hm0jGSn/uWyP
+        DSa8PvQ5O1FwN8U2S/8adc7Zhr2lflycGsKjhTm8WH6D2pcPEOJ/wPbY4Mzic1x9MIIObwCZsd2x7TZE
+        zU9Ar3ccp+5dw8eVz+G/FKK5+Lq6givTw+jy0jjrbq5ruC5qBn2g3I+p+SfhW4VobmaXXqK7MogzTmt8
+        1PyGVtDCNLgs4Xq7IWquobnkEMJEhmduI1Xs/BU1dzl4U6g1tDCV1e/fkLhZwGl3SxA1t0h4RymEydx6
+        dh/HigeDqLn3x60SIUzm7ft32F/KB1HvG89h6VMtvCSEmXAJ0u5kg6h3uDl/308I0+HTRz9q/iGEDShq
+        YR2KWliHohbWoaiFdShqYR2KWliHohbWEUXNpzB8GiOE6URRc/5Lo1rCBqKoORLDCQIhTIa/X+LvmPyo
+        k24HRp/eCS8JYSbTr6roKfUGUXO+69CNQa2rhdEUJq8jM9oeRE1TpSMYq06El4Uwi4evqzjqpepnFDnS
+        1VXOY762GL5MCDPgGGJn+WR0wE0UNeV8V6JyTgMDwhgYdPbuJZxwtkYd10VNB5w2/+yPyuxk+DYhmpPH
+        C3P+N/TvQdOGqCmXIsmfa+zcxGX/jlJT5qJZ4IQWj8HjcXg95XTsmXqxUa/JTwC3SHYVdTCkbA45esgD
+        S3lw6Z+9rrlu1FKaqKKW1qmopXUqammdilpaZgt+AMd8/OoUa6UkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="NextThemeFormFromTheme.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="NextThemeFormFromTheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 509</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NextThemeFormFromTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="NextThemeFormFromTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 41</value>
+  </data>
+  <data name="NextThemeFormFromTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;NextThemeFormFromTheme.Name" xml:space="preserve">
+    <value>NextThemeFormFromTheme</value>
+  </data>
+  <data name="&gt;&gt;NextThemeFormFromTheme.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;NextThemeFormFromTheme.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;NextThemeFormFromTheme.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="MoveToTestFromTheme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKYSURBVHhe7ZzPSxRhHIf7X6QICSmkgoqM7JerWcvK7rKb
+        VlgtEQRRBJ06eRCdcd1ZYougPHQQEiSCIJL2oB3qEFJheDAQ9lARRXiQOnzqMzNObTt5rH1fPg88IMyu
+        p2eXd97Z77vhgtsCKW1SUUvrVNTSOhW1tE5FLa1TUUvrXDfq8+5GpJ3t6C4lcdjLYs94Hm0jGSn/uWyP
+        DSa8PvQ5O1FwN8U2S/8adc7Zhr2lflycGsKjhTm8WH6D2pcPEOJ/wPbY4Mzic1x9MIIObwCZsd2x7TZE
+        zU9Ar3ccp+5dw8eVz+G/FKK5+Lq6givTw+jy0jjrbq5ruC5qBn2g3I+p+SfhW4VobmaXXqK7MogzTmt8
+        1PyGVtDCNLgs4Xq7IWquobnkEMJEhmduI1Xs/BU1dzl4U6g1tDCV1e/fkLhZwGl3SxA1t0h4RymEydx6
+        dh/HigeDqLn3x60SIUzm7ft32F/KB1HvG89h6VMtvCSEmXAJ0u5kg6h3uDl/308I0+HTRz9q/iGEDShq
+        YR2KWliHohbWoaiFdShqYR2KWliHohbWEUXNpzB8GiOE6URRc/5Lo1rCBqKoORLDCQIhTIa/X+LvmPyo
+        k24HRp/eCS8JYSbTr6roKfUGUXO+69CNQa2rhdEUJq8jM9oeRE1TpSMYq06El4Uwi4evqzjqpepnFDnS
+        1VXOY762GL5MCDPgGGJn+WR0wE0UNeV8V6JyTgMDwhgYdPbuJZxwtkYd10VNB5w2/+yPyuxk+DYhmpPH
+        C3P+N/TvQdOGqCmXIsmfa+zcxGX/jlJT5qJZ4IQWj8HjcXg95XTsmXqxUa/JTwC3SHYVdTCkbA45esgD
+        S3lw6Z+9rrlu1FKaqKKW1qmopXUqammdilpaZgt+AMd8/OoUa6UkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="MoveToTestFromTheme.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="MoveToTestFromTheme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>747, 509</value>
+  </data>
+  <data name="MoveToTestFromTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="MoveToTestFromTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 41</value>
+  </data>
+  <data name="MoveToTestFromTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MoveToTestFromTheme.Name" xml:space="preserve">
+    <value>MoveToTestFromTheme</value>
+  </data>
+  <data name="&gt;&gt;MoveToTestFromTheme.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoveToTestFromTheme.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;MoveToTestFromTheme.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKYSURBVHhe7ZzPSxRhHIf7X6QICSmkgoqM7JerWcvK7rKb
+        VlgtEQRRBJ06eRCdcd1ZYougPHQQEiSCIJL2oB3qEFJheDAQ9lARRXiQOnzqMzNObTt5rH1fPg88IMyu
+        p2eXd97Z77vhgtsCKW1SUUvrVNTSOhW1tE5FLa1TUUvrXDfq8+5GpJ3t6C4lcdjLYs94Hm0jGSn/uWyP
+        DSa8PvQ5O1FwN8U2S/8adc7Zhr2lflycGsKjhTm8WH6D2pcPEOJ/wPbY4Mzic1x9MIIObwCZsd2x7TZE
+        zU9Ar3ccp+5dw8eVz+G/FKK5+Lq6givTw+jy0jjrbq5ruC5qBn2g3I+p+SfhW4VobmaXXqK7MogzTmt8
+        1PyGVtDCNLgs4Xq7IWquobnkEMJEhmduI1Xs/BU1dzl4U6g1tDCV1e/fkLhZwGl3SxA1t0h4RymEydx6
+        dh/HigeDqLn3x60SIUzm7ft32F/KB1HvG89h6VMtvCSEmXAJ0u5kg6h3uDl/308I0+HTRz9q/iGEDShq
+        YR2KWliHohbWoaiFdShqYR2KWliHohbWEUXNpzB8GiOE6URRc/5Lo1rCBqKoORLDCQIhTIa/X+LvmPyo
+        k24HRp/eCS8JYSbTr6roKfUGUXO+69CNQa2rhdEUJq8jM9oeRE1TpSMYq06El4Uwi4evqzjqpepnFDnS
+        1VXOY762GL5MCDPgGGJn+WR0wE0UNeV8V6JyTgMDwhgYdPbuJZxwtkYd10VNB5w2/+yPyuxk+DYhmpPH
+        C3P+N/TvQdOGqCmXIsmfa+zcxGX/jlJT5qJZ4IQWj8HjcXg95XTsmXqxUa/JTwC3SHYVdTCkbA45esgD
+        S3lw6Z+9rrlu1FKaqKKW1qmopXUqammdilpaZgt+AMd8/OoUa6UkAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 509</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 41</value>
+  </data>
+  <data name="MoveToPreviousThemeForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MoveToPreviousThemeForm.Name" xml:space="preserve">
+    <value>MoveToPreviousThemeForm</value>
+  </data>
+  <data name="&gt;&gt;MoveToPreviousThemeForm.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MoveToPreviousThemeForm.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;MoveToPreviousThemeForm.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 90</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>944, 560</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="exitTrueFalseButton.Location" type="System.Drawing.Point, System.Drawing">
@@ -293,7 +531,6 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -376,7 +613,7 @@
 </value>
   </data>
   <data name="fastColoredTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>442, 229</value>
+    <value>412, 229</value>
   </data>
   <data name="fastColoredTextBox2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -398,9 +635,6 @@
   </data>
   <data name="fastColoredTextBox1.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
     <value>187, 196</value>
-  </data>
-  <data name="fastColoredTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 9.75pt</value>
   </data>
   <data name="fastColoredTextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-2, 27</value>
@@ -457,182 +691,137 @@
   <data name="&gt;&gt;fastColoredTextBox1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="trueFalseVariantsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 251</value>
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Name" xml:space="preserve">
+    <value>AnsverOnTest_ThinButton</value>
   </data>
-  <data name="trueFalseVariantsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>880, 256</value>
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="trueFalseVariantsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="trueFalseVariantsPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;AnsverOnTest_ThinButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;trueFalseVariantsPanel.Name" xml:space="preserve">
-    <value>trueFalseVariantsPanel</value>
+  <data name="&gt;&gt;ErorInputLabel.Name" xml:space="preserve">
+    <value>ErorInputLabel</value>
   </data>
-  <data name="&gt;&gt;trueFalseVariantsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ErorInputLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;trueFalseVariantsPanel.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;ErorInputLabel.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;trueFalseVariantsPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ErorInputLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="NextThemeFormFromTheme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVHhe7ZzLaxNRGEf9i9y4ceNCQaQuhKKg1kdBsT5a
-        1IgxVYu2oAbpwz5Mk5nYNlZQEAwqiAuxKloRXUiRYumigpCFiijSRdHFV36TMRoau7S5l3PgQGGarE7C
-        nTv57qpCoWCIPknU6J1Ejd5J1OidRI3eSdTonctGfW1s1E4HaWvKJq1x+JitHzpgq7u3I/531Z4a3JE7
-        acncRQvG8jWblf+MujPsjt4oUeyxh+8n7c3HaSt9/2wAK4HaU4OPZ19b+/0B23C1xVJhuma7S6LWJ6A5
-        aLf9N7vsy/y3+C0B6osfC/OWutdv27InLDMaVDVcFbWC3jzcZsWpifilAPXNi7m31hgmbHAkWztqfUMT
-        NLiGliVaby+JWmtoLTkAXKRnYtyOBl1/otYuh24KWUODqyz8+mlbwuPWN5IpR60tEt1RArhM/mXRWnId
-        5ai196etEgCXmfn0wRoyreWoNw4dtLmvpfgSgJtoCbKmt6kc9dorzdG+H4Dr6OljFLX+APABogbvIGrw
-        DqIG7yBq8A6iBu8gavAOogbvqEStpzB6GgPgOpWo9Qs9RrXABypRayRGEwQALqPfL+l3TFHUbdnz1vvk
-        RnwJwE3uvntqe3OpctSa72rItrKuBqc5cvuSdQSXy1HL1rDTBp/dii8DuMWD6ee2K3eqekZRI11bcwmb
-        Ks3G/wbgBhpD3JQ5XDngphK11HyX5rwYGABXUNC7r5+xC/m+SsdVUct0vj86+yOcvBO/DKA+eTTzKvqG
-        /jtouSRqqaXIofCc7Rk/G91RMmUO9YImtHQMno7D2xkka56pVzPq3+oToC2SdQP7ok1txJVWo4c6sFQH
-        l9ZqVi4bNaKLEjV6J1GjdxI1eidRo2cWbBGlXFbZrVdZBAAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;NextThemeFormFromTest.Name" xml:space="preserve">
+    <value>NextThemeFormFromTest</value>
   </data>
-  <data name="NextThemeFormFromTheme.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="NextThemeFormFromTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 509</value>
-  </data>
-  <data name="NextThemeFormFromTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="NextThemeFormFromTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 41</value>
-  </data>
-  <data name="NextThemeFormFromTheme.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;NextThemeFormFromTheme.Name" xml:space="preserve">
-    <value>NextThemeFormFromTheme</value>
-  </data>
-  <data name="&gt;&gt;NextThemeFormFromTheme.Type" xml:space="preserve">
+  <data name="&gt;&gt;NextThemeFormFromTest.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;NextThemeFormFromTheme.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;NextThemeFormFromTest.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;NextThemeFormFromTheme.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;NextThemeFormFromTest.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="MoveToTestFromTheme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVHhe7ZzLaxNRGEf9i9y4ceNCQaQuhKKg1kdBsT5a
-        1IgxVYu2oAbpwz5Mk5nYNlZQEAwqiAuxKloRXUiRYumigpCFiijSRdHFV36TMRoau7S5l3PgQGGarE7C
-        nTv57qpCoWCIPknU6J1Ejd5J1OidRI3eSdTonctGfW1s1E4HaWvKJq1x+JitHzpgq7u3I/531Z4a3JE7
-        acncRQvG8jWblf+MujPsjt4oUeyxh+8n7c3HaSt9/2wAK4HaU4OPZ19b+/0B23C1xVJhuma7S6LWJ6A5
-        aLf9N7vsy/y3+C0B6osfC/OWutdv27InLDMaVDVcFbWC3jzcZsWpifilAPXNi7m31hgmbHAkWztqfUMT
-        NLiGliVaby+JWmtoLTkAXKRnYtyOBl1/otYuh24KWUODqyz8+mlbwuPWN5IpR60tEt1RArhM/mXRWnId
-        5ai196etEgCXmfn0wRoyreWoNw4dtLmvpfgSgJtoCbKmt6kc9dorzdG+H4Dr6OljFLX+APABogbvIGrw
-        DqIG7yBq8A6iBu8gavAOogbvqEStpzB6GgPgOpWo9Qs9RrXABypRayRGEwQALqPfL+l3TFHUbdnz1vvk
-        RnwJwE3uvntqe3OpctSa72rItrKuBqc5cvuSdQSXy1HL1rDTBp/dii8DuMWD6ee2K3eqekZRI11bcwmb
-        Ks3G/wbgBhpD3JQ5XDngphK11HyX5rwYGABXUNC7r5+xC/m+SsdVUct0vj86+yOcvBO/DKA+eTTzKvqG
-        /jtouSRqqaXIofCc7Rk/G91RMmUO9YImtHQMno7D2xkka56pVzPq3+oToC2SdQP7ok1txJVWo4c6sFQH
-        l9ZqVi4bNaKLEjV6J1GjdxI1eidRo2cWbBGlXFbZrVdZBAAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;FromTestToThemeButton.Name" xml:space="preserve">
+    <value>FromTestToThemeButton</value>
   </data>
-  <data name="MoveToTestFromTheme.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="MoveToTestFromTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 509</value>
-  </data>
-  <data name="MoveToTestFromTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="MoveToTestFromTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 41</value>
-  </data>
-  <data name="MoveToTestFromTheme.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;MoveToTestFromTheme.Name" xml:space="preserve">
-    <value>MoveToTestFromTheme</value>
-  </data>
-  <data name="&gt;&gt;MoveToTestFromTheme.Type" xml:space="preserve">
+  <data name="&gt;&gt;FromTestToThemeButton.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;MoveToTestFromTheme.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;FromTestToThemeButton.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;MoveToTestFromTheme.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FromTestToThemeButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="MoveToPreviousThemeForm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVHhe7ZzLaxNRGEf9i9y4ceNCQaQuhKKg1kdBsT5a
-        1IgxVYu2oAbpwz5Mk5nYNlZQEAwqiAuxKloRXUiRYumigpCFiijSRdHFV36TMRoau7S5l3PgQGGarE7C
-        nTv57qpCoWCIPknU6J1Ejd5J1OidRI3eSdTonctGfW1s1E4HaWvKJq1x+JitHzpgq7u3I/531Z4a3JE7
-        acncRQvG8jWblf+MujPsjt4oUeyxh+8n7c3HaSt9/2wAK4HaU4OPZ19b+/0B23C1xVJhuma7S6LWJ6A5
-        aLf9N7vsy/y3+C0B6osfC/OWutdv27InLDMaVDVcFbWC3jzcZsWpifilAPXNi7m31hgmbHAkWztqfUMT
-        NLiGliVaby+JWmtoLTkAXKRnYtyOBl1/otYuh24KWUODqyz8+mlbwuPWN5IpR60tEt1RArhM/mXRWnId
-        5ai196etEgCXmfn0wRoyreWoNw4dtLmvpfgSgJtoCbKmt6kc9dorzdG+H4Dr6OljFLX+APABogbvIGrw
-        DqIG7yBq8A6iBu8gavAOogbvqEStpzB6GgPgOpWo9Qs9RrXABypRayRGEwQALqPfL+l3TFHUbdnz1vvk
-        RnwJwE3uvntqe3OpctSa72rItrKuBqc5cvuSdQSXy1HL1rDTBp/dii8DuMWD6ee2K3eqekZRI11bcwmb
-        Ks3G/wbgBhpD3JQ5XDngphK11HyX5rwYGABXUNC7r5+xC/m+SsdVUct0vj86+yOcvBO/DKA+eTTzKvqG
-        /jtouSRqqaXIofCc7Rk/G91RMmUO9YImtHQMno7D2xkka56pVzPq3+oToC2SdQP7ok1txJVWo4c6sFQH
-        l9ZqVi4bNaKLEjV6J1GjdxI1eidRo2cWbBGlXFbZrVdZBAAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
   </data>
-  <data name="MoveToPreviousThemeForm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="MoveToPreviousThemeForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 509</value>
-  </data>
-  <data name="MoveToPreviousThemeForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="MoveToPreviousThemeForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 41</value>
-  </data>
-  <data name="MoveToPreviousThemeForm.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;MoveToPreviousThemeForm.Name" xml:space="preserve">
-    <value>MoveToPreviousThemeForm</value>
-  </data>
-  <data name="&gt;&gt;MoveToPreviousThemeForm.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;MoveToPreviousThemeForm.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;MoveToPreviousThemeForm.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 90</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>944, 560</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 93</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>944, 560</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="panel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="AnsverOnTest_ThinButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -799,21 +988,6 @@
   <data name="&gt;&gt;FromTestToThemeButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 14</value>
-  </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
-  </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="checkBox2.Text" xml:space="preserve">
-    <value>checkBox2</value>
-  </data>
   <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
     <value>checkBox2</value>
   </data>
@@ -850,20 +1024,32 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
   </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
   </data>
-  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox3.Text" xml:space="preserve">
-    <value>checkBox3</value>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
     <value>checkBox3</value>
@@ -901,20 +1087,32 @@
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
   </data>
-  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
   </data>
-  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox4.Text" xml:space="preserve">
-    <value>checkBox4</value>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
     <value>checkBox4</value>
@@ -952,20 +1150,32 @@
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
     <value>checkBox1</value>
@@ -1003,6 +1213,33 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 14</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 29</value>
   </data>
@@ -1026,30 +1263,6 @@
   </data>
   <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 93</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>944, 560</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="panel2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

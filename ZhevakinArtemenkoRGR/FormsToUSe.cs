@@ -16,13 +16,14 @@ namespace ZhevakinArtemenkoRGR
             string[] themeAndGoodBadStyles = new string[10];
             using (StreamReader readFile = new StreamReader($@"DataBase\{fileName}", Encoding.UTF8))
             {
-                for (int i = 0; i < 10; i++)
+                bool endOfTextFile = false;
+                for (int i = 0;!endOfTextFile; i++)
                 {
                     while (true)
                     {
                         var readline = readFile.ReadLine();
-                        if (readline == "^")
-                            break;
+                        if (readline == "^")break;
+                        if (readline == "FileEnd") endOfTextFile = true;
                         themeAndGoodBadStyles[i] += readline +"\n";
                     }
                 }
