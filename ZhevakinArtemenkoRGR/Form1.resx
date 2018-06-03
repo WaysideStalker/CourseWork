@@ -354,9 +354,6 @@
   <data name="fastColoredTextBox2.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
     <value>179, 14</value>
   </data>
-  <data name="fastColoredTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 9.75pt</value>
-  </data>
   <data name="fastColoredTextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>438, 27</value>
   </data>
@@ -401,6 +398,9 @@
   </data>
   <data name="fastColoredTextBox1.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
     <value>187, 196</value>
+  </data>
+  <data name="fastColoredTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 9.75pt</value>
   </data>
   <data name="fastColoredTextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-2, 27</value>
