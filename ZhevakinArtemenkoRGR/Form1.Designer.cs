@@ -36,6 +36,7 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.trueFalseVariantsPanel = new System.Windows.Forms.Panel();
             this.exitTrueFalseButton = new MetroFramework.Controls.MetroButton();
@@ -59,7 +60,8 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.ToStartPage = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.textForTestFastColoredTextBox = new FastColoredTextBoxNS.FastColoredTextBox();
             this.panel1.SuspendLayout();
             this.trueFalseVariantsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox2)).BeginInit();
@@ -69,6 +71,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textForTestFastColoredTextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -104,6 +107,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.OliveDrab;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.trueFalseVariantsPanel);
             this.panel1.Controls.Add(this.NextThemeFormFromTheme);
@@ -111,6 +115,11 @@
             this.panel1.Controls.Add(this.MoveToPreviousThemeForm);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // panel7
             // 
@@ -290,6 +299,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Controls.Add(this.textForTestFastColoredTextBox);
             this.panel2.Controls.Add(this.AnsverOnTest_ThinButton);
             this.panel2.Controls.Add(this.ErorInputLabel);
             this.panel2.Controls.Add(this.NextThemeFormFromTest);
@@ -298,7 +308,6 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.richTextBox2);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
@@ -439,17 +448,61 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseClick);
             // 
-            // richTextBox2
+            // ToStartPage
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.richTextBox2, "richTextBox2");
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
+            this.ToStartPage.ActiveBorderThickness = 1;
+            this.ToStartPage.ActiveCornerRadius = 20;
+            this.ToStartPage.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.ToStartPage.ActiveForecolor = System.Drawing.Color.White;
+            this.ToStartPage.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.ToStartPage.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.ToStartPage, "ToStartPage");
+            this.ToStartPage.ButtonText = "К странице выбора";
+            this.ToStartPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToStartPage.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ToStartPage.IdleBorderThickness = 1;
+            this.ToStartPage.IdleCornerRadius = 20;
+            this.ToStartPage.IdleFillColor = System.Drawing.Color.White;
+            this.ToStartPage.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ToStartPage.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.ToStartPage.Name = "ToStartPage";
+            this.ToStartPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ToStartPage.Click += new System.EventHandler(this.ToStartPage_Click);
+            // 
+            // textForTestFastColoredTextBox
+            // 
+            this.textForTestFastColoredTextBox.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            resources.ApplyResources(this.textForTestFastColoredTextBox, "textForTestFastColoredTextBox");
+            this.textForTestFastColoredTextBox.BackBrush = null;
+            this.textForTestFastColoredTextBox.CharHeight = 14;
+            this.textForTestFastColoredTextBox.CharWidth = 8;
+            this.textForTestFastColoredTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textForTestFastColoredTextBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.textForTestFastColoredTextBox.IsReplaceMode = false;
+            this.textForTestFastColoredTextBox.Language = FastColoredTextBoxNS.Language.CSharp;
+            this.textForTestFastColoredTextBox.Name = "textForTestFastColoredTextBox";
+            this.textForTestFastColoredTextBox.Paddings = new System.Windows.Forms.Padding(0);
+            this.textForTestFastColoredTextBox.ReadOnly = true;
+            this.textForTestFastColoredTextBox.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.textForTestFastColoredTextBox.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("textForTestFastColoredTextBox.ServiceColors")));
+            this.textForTestFastColoredTextBox.ShowLineNumbers = false;
+            this.textForTestFastColoredTextBox.Zoom = 100;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ToStartPage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroButton5);
             this.Controls.Add(this.panel2);
@@ -458,8 +511,10 @@
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.trueFalseVariantsPanel.ResumeLayout(false);
             this.trueFalseVariantsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox2)).EndInit();
@@ -474,6 +529,7 @@
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textForTestFastColoredTextBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -495,7 +551,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private Bunifu.Framework.UI.BunifuThinButton2 NextThemeFormFromTheme;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -510,6 +565,9 @@
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
         private MetroFramework.Controls.MetroButton exitTrueFalseButton;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuThinButton2 ToStartPage;
+        private FastColoredTextBoxNS.FastColoredTextBox textForTestFastColoredTextBox;
     }
 }
 

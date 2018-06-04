@@ -182,6 +182,7 @@
             this.Controls.Add(this.Theme2);
             this.Controls.Add(this.Theme1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.MaximizeBox = false;
             this.Name = "StartPage";
             this.Text = "StartPage";
             this.ResumeLayout(false);

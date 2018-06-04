@@ -19,9 +19,17 @@ namespace ZhevakinArtemenkoRGR
 
         private void DeytelStartPicture_Click(object sender, EventArgs e)
         {
-            Hide();
             StartPage deytelStartPage = new StartPage();
             deytelStartPage.Show();
+            Hide();
+            
+        }
+
+        private void MackonellStartPicture_Click(object sender, EventArgs e)
+        {
+            MackonahellStartPage mackonahell = new MackonahellStartPage();
+            mackonahell.Show();
+            Hide();
         }
     }
 }
