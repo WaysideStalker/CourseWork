@@ -16,6 +16,7 @@ namespace ZhevakinArtemenkoRGR
         public MackonahellStartPage()
         {
             InitializeComponent();
+            
         }
         public void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -64,15 +65,18 @@ namespace ZhevakinArtemenkoRGR
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 existForms[indexFormToCreate].HideButtonToPrevious();
-            if (indexFormToCreate == existForms.Count - 1)
+            if (indexFormToCreate == 5)
                 existForms[indexFormToCreate].HideButtonToNext();
             Hide();
             existForms[indexFormToCreate].Show();
+
         }
 
         private void Theme6_Click(object sender, EventArgs e)
         {
+           
             OpenForm(5);
+            existForms[5].NextThemeFormFromTheme.Visible = false;
         }
     }
 }

@@ -72,12 +72,12 @@ namespace ZhevakinArtemenkoRGR
 
         private static void FillForMackonahell()
         {
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FirstTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\SecondTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\ThirdTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FourthTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FifthTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
-            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\SixthTheme.txt"), ReadFromSourceFile(@"Mackonahell\TestForText.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FirstTheme.txt"), ReadFromSourceFile(@"Deytell\FirstTest.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\SecondTheme.txt"), ReadFromSourceFile(@"Deytell\ThirdTest.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\ThirdTheme.txt"), ReadFromSourceFile(@"Deytell\ThirdTest.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FourthTheme.txt"), ReadFromSourceFile(@"Deytell\FourthTest.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\FifthTheme.txt"), ReadFromSourceFile(@"Deytell\SecondTest.txt") });
+            MackonahellListsList.Add(new List<List<string>>() { ReadFromSourceFile(@"Mackonahell\SixthTheme.txt"), ReadFromSourceFile(@"Deytell\FifthTest.txt") });
 
         }
 

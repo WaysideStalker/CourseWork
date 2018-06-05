@@ -28,7 +28,7 @@ namespace ZhevakinArtemenkoRGR
         public Form1(List<string> text, List<string> test)
         {
             InitializeComponent();
-            addSixthButton();
+            addЬMackonahellComponents();
             _textCorrectIncorrectCodeStrings = new string[text.Count][];
             _testQuestionAndAnsverStrings = new string[test.Count][];
             InizializeRichTextBoxComponents(text.Count);
@@ -44,7 +44,7 @@ namespace ZhevakinArtemenkoRGR
 
         }
 
-        private void addSixthButton()
+        private void addЬMackonahellComponents()
         {
 
             if (FormsToUSe.ListsList.Count == FormsToUSe.MackonahellListsList.Count )
@@ -53,19 +53,25 @@ namespace ZhevakinArtemenkoRGR
                 metroButton7.Location = new Point(metroButton7.Location.X, metroButton7.Location.Y + distanceBetweenMetroButtons);
                 MetroButton toSixTheMetroButton = new MetroButton()
                 {
-                    Text="6) Показщики",
+                    Text="6) Показчики",
                     Location=new Point(metroButton5.Location.X, metroButton5.Location.Y+distanceBetweenMetroButtons),
                     Visible=true ,
                     Size = metroButton5.Size 
                 };
                 this.Controls.Add(toSixTheMetroButton);
                 toSixTheMetroButton.MouseClick += ToSixTheMetroButton_MouseClick;
+                metroButton1.Text = "1) Змінні";
+                metroButton2.Text = "2) Числові типи даних";
+                metroButton3.Text = "3) Рядки й масиви символів";
+                metroButton4.Text = "4) Масиви";
+                metroButton5.Text = "5) Структури";
             }
         }
 
         private void ToSixTheMetroButton_MouseClick(object sender, MouseEventArgs e)
         {
             OpenForm(5);
+            MackonahellStartPage.existForms[5].NextThemeFormFromTheme.Visible = false;
         }
 
         private void DelimitedTestStringTo2Array(List<string> test)
@@ -199,6 +205,7 @@ namespace ZhevakinArtemenkoRGR
         public void HideButtonToNext()
         {
             NextThemeFormFromTest.Visible = false;
+            NextThemeFormFromTheme.Visible = false;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -231,10 +238,11 @@ namespace ZhevakinArtemenkoRGR
             OpenForm(FormsToUSe._indexOfCurrent - 1);
         }
 
-        private void NextThemeFormFromTheme_Click(object sender, EventArgs e)
+        public void NextThemeFormFromTheme_Click(object sender, EventArgs e)
         {
 
             OpenForm(FormsToUSe._indexOfCurrent + 1);
+
         }
 
         public void OpenForm(int indexFormToOpen)
@@ -248,6 +256,7 @@ namespace ZhevakinArtemenkoRGR
                 int indexOfPastTheme = FormsToUSe._indexOfCurrent;
                 if (existForms[indexFormToOpen] != null)
                 {
+
                     FormsToUSe._indexOfCurrent = indexFormToOpen;
                     existForms[FormsToUSe._indexOfCurrent].Show();
                 }
@@ -269,8 +278,6 @@ namespace ZhevakinArtemenkoRGR
                 existForms[indexFormToCreate].HideButtonToPrevious();
             if (indexFormToCreate == existForms.Count - 1)
                 existForms[indexFormToCreate].HideButtonToNext();
-
-            existForms[indexFormToCreate].Show();
         }
 
         private void AnsverOnTest_ThinButton_Click(object sender, EventArgs e)

@@ -558,7 +558,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuThinButton2 NextThemeFormFromTheme;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
@@ -576,6 +575,7 @@
         private FastColoredTextBoxNS.FastColoredTextBox textForTestFastColoredTextBox;
         private MetroFramework.Controls.MetroButton metroButton6;
         private MetroFramework.Controls.MetroButton metroButton7;
+        public Bunifu.Framework.UI.BunifuThinButton2 NextThemeFormFromTheme;
     }
 }
 

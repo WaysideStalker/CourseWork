@@ -50,6 +50,7 @@ namespace ZhevakinArtemenkoRGR
         {
             if (existForms[FormsToUSe._indexOfCurrent] != null)
                 existForms[FormsToUSe._indexOfCurrent].Hide();
+
             if (existForms[indexFormToOpen] != null)
             {
                 FormsToUSe._indexOfCurrent = indexFormToOpen;
