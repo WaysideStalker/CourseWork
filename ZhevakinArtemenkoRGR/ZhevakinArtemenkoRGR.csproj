@@ -72,6 +72,24 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChooseThemeTypicalMistakes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseThemeTypicalMistakes.Designer.cs">
+      <DependentUpon>ChooseThemeTypicalMistakes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeitelChooseStyleOrMistakes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeitelChooseStyleOrMistakes.Designer.cs">
+      <DependentUpon>DeitelChooseStyleOrMistakes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeitelTypicalMistakes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeitelTypicalMistakes.Designer.cs">
+      <DependentUpon>DeitelTypicalMistakes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +97,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsToUSe.cs" />
+    <Compile Include="Mac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mac.Designer.cs">
+      <DependentUpon>Mac.cs</DependentUpon>
+    </Compile>
     <Compile Include="MackonahellStartPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +123,20 @@
     <Compile Include="StartPage.Designer.cs">
       <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChooseThemeTypicalMistakes.resx">
+      <DependentUpon>ChooseThemeTypicalMistakes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeitelChooseStyleOrMistakes.resx">
+      <DependentUpon>DeitelChooseStyleOrMistakes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeitelTypicalMistakes.resx">
+      <DependentUpon>DeitelTypicalMistakes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mac.resx">
+      <DependentUpon>Mac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MackonahellStartPage.resx">
       <DependentUpon>MackonahellStartPage.cs</DependentUpon>

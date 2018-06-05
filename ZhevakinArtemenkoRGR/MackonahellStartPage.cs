@@ -16,7 +16,6 @@ namespace ZhevakinArtemenkoRGR
         public MackonahellStartPage()
         {
             InitializeComponent();
-            FormsToUSe.UseMackonahell();
         }
         public void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -60,7 +59,8 @@ namespace ZhevakinArtemenkoRGR
         }
         public void CreateNewForm(int indexFormToCreate)
         {
-            existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0], FormsToUSe.ListsList[indexFormToCreate][1]));
+            existForms[indexFormToCreate] = new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
+                FormsToUSe.ListsList[indexFormToCreate][1]);
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 existForms[indexFormToCreate].HideButtonToPrevious();

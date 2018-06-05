@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Controls;
 
 
 namespace ZhevakinArtemenkoRGR
@@ -22,30 +23,51 @@ namespace ZhevakinArtemenkoRGR
         List<RichTextBox> RichTextBoxList = new List<RichTextBox>();
         private string[][] _textCorrectIncorrectCodeStrings;
         private string[][] _testQuestionAndAnsverStrings;
+        MainPage exitToMainPage = new MainPage();
 
         public Form1(List<string> text, List<string> test)
         {
+            InitializeComponent();
+            addSixthButton();
             _textCorrectIncorrectCodeStrings = new string[text.Count][];
             _testQuestionAndAnsverStrings = new string[test.Count][];
-            InitializeComponent();
             InizializeRichTextBoxComponents(text.Count);
             _indexOfCurrentTest = 0;
             DelimitedTextStringTo2Array(text);
             DelimitedTestStringTo2Array(test);
-            //_answersForTest = answers;
-            //_correctAnswersForTest = correctAnswers;
-            //richTextBox2.Text = test;
             _varianToUSeCheckBoxs = new List<CheckBox> { checkBox1, checkBox2, checkBox3, checkBox4 };
-            //for (int i = 0; i < _varianToUSeCheckBoxs.Count; i++)
-            //  _varianToUSeCheckBoxs[i].Text = answers[i];
             NextTest();
-
-
-
             panel2.Visible = false;
             fastColoredTextBox1.ReadOnly = true;
             fastColoredTextBox2.ReadOnly = true;
+
+
         }
+
+        private void addSixthButton()
+        {
+
+            if (FormsToUSe.ListsList.Count == FormsToUSe.MackonahellListsList.Count )
+            {
+                int distanceBetweenMetroButtons = metroButton5.Location.Y-metroButton4.Location.Y;              
+                metroButton7.Location = new Point(metroButton7.Location.X, metroButton7.Location.Y + distanceBetweenMetroButtons);
+                MetroButton toSixTheMetroButton = new MetroButton()
+                {
+                    Text="6) Показщики",
+                    Location=new Point(metroButton5.Location.X, metroButton5.Location.Y+distanceBetweenMetroButtons),
+                    Visible=true ,
+                    Size = metroButton5.Size 
+                };
+                this.Controls.Add(toSixTheMetroButton);
+                toSixTheMetroButton.MouseClick += ToSixTheMetroButton_MouseClick;
+            }
+        }
+
+        private void ToSixTheMetroButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            OpenForm(5);
+        }
+
         private void DelimitedTestStringTo2Array(List<string> test)
         {
             for (int i = 0; i < test.Count; i++)
@@ -63,7 +85,7 @@ namespace ZhevakinArtemenkoRGR
 
             for (int i = 0; i < RichTextBoxList.Count; i++)
             {
-                RichTextBoxList[i].Text = _textCorrectIncorrectCodeStrings[i][0];////
+                RichTextBoxList[i].Text = _textCorrectIncorrectCodeStrings[i][0];
             }
         }
         public void bunifuThinButton26_Click(object sender, EventArgs e)
@@ -82,7 +104,7 @@ namespace ZhevakinArtemenkoRGR
         {
             usingPanel.BackColor = Color.Black;
             usingCheckBox.BackColor = Color.Black;
-            usingCheckBox.ForeColor = Color.White;
+            usingCheckBox.ForeColor = Color.GhostWhite;
         }
 
         public void panel4_MouseEnter(object sender, EventArgs e)
@@ -107,7 +129,7 @@ namespace ZhevakinArtemenkoRGR
 
         public void MouseLeaveInPanelWithChechBox(Panel usingPanel, CheckBox usingCheckBox)
         {
-            usingPanel.BackColor = Color.Silver;
+            usingPanel.BackColor = Color.GhostWhite;
             usingCheckBox.BackColor = Color.Transparent;
             usingCheckBox.ForeColor = Color.Black;
         }
@@ -217,34 +239,38 @@ namespace ZhevakinArtemenkoRGR
 
         public void OpenForm(int indexFormToOpen)
         {
+      
             if (indexFormToOpen != FormsToUSe._indexOfCurrent)
             {
+                List<Form1> existForms = FormsToUSe.ListsList.Count == FormsToUSe.MackonahellListsList.Count                   
+                    ? MackonahellStartPage.existForms
+                    : StartPage.existForms;
                 int indexOfPastTheme = FormsToUSe._indexOfCurrent;
-                if (StartPage.existForms[indexFormToOpen] != null)
+                if (existForms[indexFormToOpen] != null)
                 {
                     FormsToUSe._indexOfCurrent = indexFormToOpen;
-                    StartPage.existForms[FormsToUSe._indexOfCurrent].Show();
+                    existForms[FormsToUSe._indexOfCurrent].Show();
                 }
                 else
                 {
-                    CreateNewForm(indexFormToOpen);
+                    CreateNewForm(indexFormToOpen, existForms);
                 }
-                if (StartPage.existForms[indexOfPastTheme] != null)
-                    StartPage.existForms[indexOfPastTheme].Hide();
+                if (existForms[indexOfPastTheme] != null)
+                    existForms[indexOfPastTheme].Hide();
             }
         }
 
-        public void CreateNewForm(int indexFormToCreate)
+        public void CreateNewForm(int indexFormToCreate, List<Form1> existForms)
         {
-            StartPage.existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
-                FormsToUSe.ListsList[indexFormToCreate][1]));
+           existForms[indexFormToCreate]= new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
+                FormsToUSe.ListsList[indexFormToCreate][1]);
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
-                StartPage.existForms[indexFormToCreate].HideButtonToPrevious();
-            if (indexFormToCreate == StartPage.existForms.Count - 1)
-                StartPage.existForms[indexFormToCreate].HideButtonToNext();
+                existForms[indexFormToCreate].HideButtonToPrevious();
+            if (indexFormToCreate == existForms.Count - 1)
+                existForms[indexFormToCreate].HideButtonToNext();
 
-            StartPage.existForms[indexFormToCreate].Show();
+            existForms[indexFormToCreate].Show();
         }
 
         private void AnsverOnTest_ThinButton_Click(object sender, EventArgs e)
@@ -297,34 +323,26 @@ namespace ZhevakinArtemenkoRGR
         }
         private void InizializeRichTextBoxComponents(int numberToInizializate)
         {
-            MouseEventHandler[] richTextBoxListItemsActions = GetRichTextBoxListItemsActions();
             for (int i = 0; i < numberToInizializate; i++)
             {
                 RichTextBoxList.Add(new RichTextBox()
                 {
                     ReadOnly = true,
-                    Size = new Size(900, 100),
-                    Location = new Point(10, (panel7.Controls.Count) * 100)
+                    AutoSize = true,
+                    Size = new Size(950, 100),
+                    Location = new Point(10, (panel7.Controls.Count) * 100),
+                    Tag = i,
+                    Font = new Font("Times New Roman", 14)
                 });
                 panel7.Controls.Add(RichTextBoxList[i]);
-                RichTextBoxList[i].MouseClick += richTextBoxListItemsActions[i];
+                RichTextBoxList[i].MouseClick += a;
             }
 
         }
-        private MouseEventHandler[] GetRichTextBoxListItemsActions()
+        private void a(object sender, MouseEventArgs e)
         {
-            MouseEventHandler[] actionsToReturn = new MouseEventHandler[10];
-            actionsToReturn[0] += richTextBoxListItem0_MouseClick;
-            actionsToReturn[1] += richTextBoxListItem1_MouseClick;
-            actionsToReturn[2] += richTextBoxListItem2_MouseClick;
-            actionsToReturn[3] += richTextBoxListItem3_MouseClick;
-            actionsToReturn[4] += richTextBoxListItem4_MouseClick;
-            actionsToReturn[5] += richTextBoxListItem5_MouseClick;
-            actionsToReturn[6] += richTextBoxListItem6_MouseClick;
-            actionsToReturn[7] += richTextBoxListItem7_MouseClick;
-            actionsToReturn[8] += richTextBoxListItem8_MouseClick;
-            actionsToReturn[9] += richTextBoxListItem9_MouseClick;
-            return actionsToReturn;
+            var index = ((RichTextBox)sender).Tag;
+            richTextBoxListItems_AddText((int)index);
         }
         private void richTextBoxListItems_AddText(int numberForm)
         {
@@ -335,53 +353,27 @@ namespace ZhevakinArtemenkoRGR
 
         }
 
-        private void richTextBoxListItem0_MouseClick(object sender, MouseEventArgs e)
+        private void metroButton7_Click(object sender, EventArgs e)
         {
-            richTextBoxListItems_AddText(0);
-        }
-        private void richTextBoxListItem1_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(1);
-        }
-        private void richTextBoxListItem2_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(2);
-        }
-        private void richTextBoxListItem3_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(3);
-        }
-        private void richTextBoxListItem4_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(4);
-        }
-        private void richTextBoxListItem5_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(5);
-        }
-        private void richTextBoxListItem6_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(6);
-        }
-        private void richTextBoxListItem7_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(7);
-        }
-        private void richTextBoxListItem8_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(8);
-
-        }
-        private void richTextBoxListItem9_MouseClick(object sender, MouseEventArgs e)
-        {
-            richTextBoxListItems_AddText(9);
-        }
-
-        private void ToStartPage_Click(object sender, EventArgs e)
-        {
-            MainPage exitFromDeytell = new MainPage();
-            exitFromDeytell.Show();
             Hide();
+            exitToMainPage.Show();
+            Hide();
+
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroButton6_MouseEnter(object sender, EventArgs e)
+        {
+            metroButton6.BackColor = Color.Black;
+        }
+
+        private void metroButton6_MouseLeave(object sender, EventArgs e)
+        {
+            metroButton6.BackColor = Color.Black;
         }
     }
 }

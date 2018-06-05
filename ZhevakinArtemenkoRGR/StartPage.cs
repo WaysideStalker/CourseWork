@@ -13,10 +13,11 @@ namespace ZhevakinArtemenkoRGR
     public partial class StartPage : Form
     {
         public static List<Form1> existForms = new List<Form1>() { null, null, null, null, null };
+        public static List<DeitelTypicalMistakes> ListOfForms = new List<DeitelTypicalMistakes>() {null, null, null, null, null};
         public StartPage()
         {
             InitializeComponent();
-            FormsToUSe.UseDaytell();
+            FormsToUSe.FillMistakesForDeitel();
         }
         
         public  void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -58,10 +59,13 @@ namespace ZhevakinArtemenkoRGR
             {
                 CreateNewForm(indexFormToOpen);
             }
+
+            Hide();
         }
         public void CreateNewForm(int indexFormToCreate)
         {
-            existForms.Insert(indexFormToCreate, new Form1(FormsToUSe.ListsList[indexFormToCreate][0], FormsToUSe.ListsList[indexFormToCreate][1]));
+            existForms[indexFormToCreate] = new Form1(FormsToUSe.ListsList[indexFormToCreate][0],
+                FormsToUSe.ListsList[indexFormToCreate][1]);
             FormsToUSe._indexOfCurrent = indexFormToCreate;
             if (indexFormToCreate == 0)
                 existForms[indexFormToCreate].HideButtonToPrevious();
@@ -69,6 +73,31 @@ namespace ZhevakinArtemenkoRGR
                 existForms[indexFormToCreate].HideButtonToNext();
             Hide();
             existForms[indexFormToCreate].Show();
+        }
+
+
+        public void OpenTypicalMistakes(int indexFormToOpen)
+        {
+            if (ListOfForms[FormsToUSe._TypicalMistakesIndex] != null)
+                ListOfForms[FormsToUSe._TypicalMistakesIndex].Hide();
+            if (ListOfForms[indexFormToOpen] != null)
+            {
+                FormsToUSe._TypicalMistakesIndex = indexFormToOpen;
+                ListOfForms[FormsToUSe._TypicalMistakesIndex].Show();
+            }
+            else
+            {
+                CreateNewTypicalMistakes(indexFormToOpen);
+            }
+        }
+        public void CreateNewTypicalMistakes(int indexFormToCreate)
+        {
+            ListOfForms.Insert(indexFormToCreate, new DeitelTypicalMistakes());
+            FormsToUSe._TypicalMistakesIndex = indexFormToCreate;
+            ListOfForms[indexFormToCreate].richTextBox1.Text = FormsToUSe.TypicalMistakesDeitel[indexFormToCreate];
+            FormsToUSe._TypicalMistakesIndex = indexFormToCreate;
+            Hide();
+            ListOfForms[indexFormToCreate].Show();
         }
     }
 }
